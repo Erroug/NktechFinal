@@ -1,42 +1,48 @@
-import React, { useState, useEffect, useContext } from "react";
-import axios from "axios";
+import React, { useState, useContext } from "react";
 import { CartContext } from "../context/CartContext.jsx";
 
 export default function SoftwareAndApps() {
   const [sortOption, setSortOption] = useState("default");
-  const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const { addToCart } = useContext(CartContext);
-
-  const fetchProducts = async (sort) => {
-    try {
-      setLoading(true);
-      const res = await axios.get(
-        `http://localhost:3000/api/product/products?sort=${sort}`
-      );
-      setProducts(res.data.data);
-    } catch (err) {
-      console.error(err);
-    } finally {
-      setLoading(false);
+  const [products, setProducts] = useState([
+    {
+      _id: "1",
+      title: "E-commerce Website",
+      price: 25000,
+      oldPrice: 30000,
+      image: "/src/assets/nktech-logo.jpg",
+      sale: true
+    },
+    {
+      _id: "2", 
+      title: "Business Website",
+      price: 15000,
+      oldPrice: 20000,
+      image: "/src/assets/nktech-logo.jpg",
+      sale: true
+    },
+    {
+      _id: "3",
+      title: "Portfolio Website", 
+      price: 8000,
+      image: "/src/assets/nktech-logo.jpg"
+    },
+    {
+      _id: "4",
+      title: "Blog Website",
+      price: 12000,
+      oldPrice: 15000,
+      image: "/src/assets/nktech-logo.jpg",
+      sale: true
     }
-  };
-
-  useEffect(() => {
-    fetchProducts(sortOption);
-  }, [sortOption]);
+  ]);
+  const [loading, setLoading] = useState(false);
+  const { addToCart } = useContext(CartContext);
 
   const handleSort = (option) => {
     setSortOption(option);
+    // In a real app, you would sort the products here
+    // For now, we'll just update the sort option
   };
-
-  if (loading) {
-    return (
-      <div className="p-6 text-center text-lg text-gray-500 animate-pulse">
-        Loading products...
-      </div>
-    );
-  }
 
   return (
     <div className="p-6 max-w-7xl mx-auto bg-white min-h-screen">
