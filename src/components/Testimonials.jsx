@@ -1,10 +1,9 @@
+'use client';
 import { useState } from 'react';
+import RajivKhanna from "../assets/rajivkhana.jpg";
+import yajushkhanna from "../assets/yajush-khanna-1.jpg";
+import noprofile from "../assets/noprofile-06.svg";
 import { FaStar } from "react-icons/fa";
-
-// Import images with proper error handling
-import RajivKhannaImg from "../assets/rajivkhana.jpg";
-import YajushKhannaImg from "../assets/yajush-khanna-1.jpg";
-import NoProfileImg from "../assets/noprofile-06.svg";
 
 const Testimonials = () => {
   const testimonials = [
@@ -16,7 +15,8 @@ const Testimonials = () => {
       fullText:
         "This is a Jukaso Journeys reviews, if you are looking for the best SEO company in Noida then NKtech is the best choice. I am thankful to the Team NKtech for providing result-oriented SEO services for my business. My overall experience with them was amazing. They have a good team of digital marketing experts. They are the fastest growing SEO Company in Noida. Keep it Up.",
       rating: 5,
-      image: RajivKhannaImg
+      image:
+        RajivKhanna
     },
     {
       id: 2,
@@ -26,7 +26,7 @@ const Testimonials = () => {
       fullText:
         "I am very much pleased with the services of Nktech. They are providing the best SEO services in Noida. Initially, our website performance was not good but when we gave our work to them and now our website is performing well. I found, traffic is increased and rank has improved. Great work was done by the team",
       rating: 4,
-      image: YajushKhannaImg
+      image:yajushkhanna
     },
     {
       id: 3,
@@ -36,7 +36,8 @@ const Testimonials = () => {
       fullText:
         "The experience was very nice with NKTech. Mr. Rajeev Sharma is the best person I have ever meet. he helped & guide me to grow my business online with the company. Must say genuine Company. Looking for Best SEO company in Noida ? NKTech is will be the best choice.",
       rating: 5,
-      image: NoProfileImg
+      image:
+        noprofile
     },
   ];
 
@@ -64,9 +65,6 @@ const Testimonials = () => {
                 src={t.image}
                 alt={t.name}
                 className="w-12 h-12 rounded-full mr-4 object-cover border-2 border-gray-200"
-                onError={(e) => {
-                  e.target.src = "https://via.placeholder.com/48x48?text=IMG";
-                }}
               />
               <div>
                 <h3 className="text-lg font-semibold">{t.name}</h3>
