@@ -1,9 +1,8 @@
-// Using placeholder images for now to avoid build issues
-const awardImg = "https://via.placeholder.com/200x150?text=Govt+Projects";
-const WinnerImg = "https://via.placeholder.com/200x150?text=Winner";
-const RankImg = "https://via.placeholder.com/200x150?text=Ranked+Top";
-const GoogleImg = "https://via.placeholder.com/200x150?text=Google+Certified";
-const iphoneImg = "https://via.placeholder.com/200x150?text=iPhone+Toolbox";
+import awardImg from "../assets/govt-projects.png";
+import WinnerImg from "../assets/winner.png";
+import RankImg from "../assets/rank.png";
+import GoogleImg from "../assets/google-certified.png";
+import iphoneImg from "../assets/iphone-toolbox.jpg";
 const Card = ({ title, description, imgSrc, width, height }) => (
   <div className="w-75 p-1 bg-[#1f3b4d] text-white rounded-lg shadow-lg overflow-hidden">
     <img

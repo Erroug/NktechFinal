@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-// Using placeholder images for now to avoid build issues
-const seo = "https://via.placeholder.com/1200x600?text=SEO+Services";
-const marketing = "https://via.placeholder.com/1200x600?text=Digital+Marketing";
-const brilliantsmart = "https://via.placeholder.com/1200x600?text=Smart+Website";
+import seo from "../assets/slider_full1.jpg";
+import marketing from "../assets/slider_full2.jpg";
+import brilliantsmart from "../assets/slider_full3.jpg";
 
 
 

@@ -1,17 +1,21 @@
 // ClientsMarquee.jsx
 import React from "react";
+import drSweta from "../assets/dr-sweta-gupta.png";
+import fyra from "../assets/fyra.png";
+import mulBerry from "../assets/mulberry.png";
+import hawaHawai from "../assets/hawa-hawai.png";
+import medicarthIndia from "../assets/medicarthindia.webp";
+import realtyNerve from "../assets/realty-nerve.webp";
+import patentDraw from "../assets/patentdraw.webp";
 
 const logos = [
-  "https://via.placeholder.com/150x80?text=Client+1",
-  "https://via.placeholder.com/150x80?text=Client+2", 
-  "https://via.placeholder.com/150x80?text=Client+3",
-  "https://via.placeholder.com/150x80?text=Client+4",
-  "https://via.placeholder.com/150x80?text=Client+5",
-  "https://via.placeholder.com/150x80?text=Client+6",
-  "https://via.placeholder.com/150x80?text=Client+7",
-  "https://via.placeholder.com/150x80?text=Client+8",
-  "https://via.placeholder.com/150x80?text=Client+9",
-  "https://via.placeholder.com/150x80?text=Client+10",
+  drSweta,
+  fyra,
+  mulBerry,
+  hawaHawai,
+  medicarthIndia,
+  realtyNerve,
+  patentDraw,
 ];
 
 
