@@ -7,17 +7,17 @@ import { FaStar } from "react-icons/fa";
 
 const Testimonials = () => {
   const testimonials = [
-    {
-      id: 1,
-      name: "Rajiv Khanna",
-      designation: "MD Jukaso Hotels Pvt. Ltd.",
-      text: "This is an amazing service!",
-      fullText:
-        "This is a Jukaso Journeys reviews, if you are looking for the best SEO company in Noida then NKtech is the best choice. I am thankful to the Team NKtech for providing result-oriented SEO services for my business. My overall experience with them was amazing. They have a good team of digital marketing experts. They are the fastest growing SEO Company in Noida. Keep it Up.",
-      rating: 5,
-      image:
-        RajivKhanna
-    },
+    // {
+    //   id: 1,
+    //   name: "Rajiv Khanna",
+    //   designation: "MD Jukaso Hotels Pvt. Ltd.",
+    //   text: "This is an amazing service!",
+    //   fullText:
+    //     "This is a Jukaso Journeys reviews, if you are looking for the best SEO company in Noida then NKtech is the best choice. I am thankful to the Team NKtech for providing result-oriented SEO services for my business. My overall experience with them was amazing. They have a good team of digital marketing experts. They are the fastest growing SEO Company in Noida. Keep it Up.",
+    //   rating: 5,
+    //   image:
+    //     RajivKhanna
+    // },
     {
       id: 2,
       name: "Yajus Khanna",
