@@ -58,20 +58,20 @@ const AustraliaContact = () => {
           <div>
             <h3 className="text-lg pt-30 font-semibold">Phone</h3>
             <a
-              href="tel:+918920877101"
+              href="tel:+91 7836055511"
               className="text-blue-600 underline hover:underline"
             >
-              +91 8920 8771 01
+              +91 7836055511
             </a>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold">Mail</h3>
             <a
-              href="mailto:info@nktech.in"
+              href="mailto:info@bizwoke.in"
               className="text-red-500 underline hover:underline"
             >
-              info@nktech.in
+              info@bizwoke.in
             </a>
           </div>
           <div>

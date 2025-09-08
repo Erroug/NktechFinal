@@ -1,76 +1,157 @@
 import React from "react";
+import { CheckCircle } from "lucide-react";
 
-const AEOServices = () => {
+const AOEServices = () => {
   return (
-    <section className="px-6 md:px-20 py-10 bg-white text-gray-800">
-      <div className="max-w-6xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-blue-700">Best AEO Company in Noida</h1>
-        <p className="mb-6 text-lg">NKTech – The Best AEO Company in Noida for <strong>(AI)</strong> Answer Engine Optimization or AI Engine Optimization</p>
+    <div className="bg-white text-gray-900">
+      {/* Hero Section */}
+      <section className="max-w-4xl mx-auto px-4 py-12">
+        <h1 className="text-4xl font-bold mb-4">Best AEO company in Noida</h1>
+        <p className="text-lg mb-6">
+          <span className="font-bold">NKTech – The Best AEO Company in Noida</span> for (AI) Answer
+          Engine Optimization or AI Engine Optimization
+        </p>
+        <p className="mb-6">
+          Looking for the best AEO company in Noida? NKTech offers expert Answer
+          Engine Optimization services to help your brand rank higher in
+          AI-driven search results like Google SGE and ChatGPT.
+        </p>
+        <div className="flex justify-center">
+          <img
+            src="/nklogo.png"
+            alt="NK Tech Logo"
+            className="w-60 h-auto"
+          />
+        </div>
+      </section>
 
-        <p className="mb-6">Looking for the best AEO company in Noida? <strong>NKTech</strong> offers expert Answer Engine Optimization services to help your brand rank higher in AI-driven search results like Google SGE and ChatGPT.</p>
+      {/* Introduction */}
+      <section className="max-w-4xl mx-auto px-4 py-8">
+        <h2 className="text-2xl font-bold mb-4">Introduction</h2>
+        <p className="mb-4">
+          The future of search is here—and it’s powered by <b>Answer Engines</b>{" "}
+          like <b>Google’s SGE</b> (Search Generative Experience), Bing AI, and
+          ChatGPT. Traditional SEO alone is no longer enough. Businesses need to
+          optimize their content to appear in AI-powered direct answers and
+          conversational results. That’s where <b>NKTech</b>, the
+          <b> best AEO company in Noida</b>, comes in.
+        </p>
+        <a href="#" className="text-pink-600 font-semibold">
+          Get a Free AI SEO Audit
+        </a>
+      </section>
 
-        <h2 className="text-2xl font-semibold mt-10 mb-4 text-blue-600">What is AEO in Digital Marketing?</h2>
-        <p className="mb-4">AEO stands for <strong>Answer Engine Optimization</strong> or <strong>AI Engine Optimization</strong>. It focuses on optimizing digital content for AI-driven answer engines like:</p>
-        <ul className="list-disc pl-6 mb-6">
-          <li>Google SGE (Search Generative Experience)</li>
-          <li>ChatGPT</li>
-          <li>Bing AI</li>
-          <li>Voice Assistants like Alexa, Siri, and Google Assistant</li>
+      {/* Why NKTech */}
+      <section className="max-w-4xl mx-auto px-4 py-8">
+        <h2 className="text-2xl font-bold mb-6">
+          Why NKTech is the Best AEO Company in Noida
+        </h2>
+        <ul className="space-y-4">
+          {[
+            {
+              title: "AI-First Content Strategy",
+              desc: "We create content that aligns with how AI tools interpret and deliver answers—clear, concise, and semantically rich.",
+            },
+            {
+              title: "Structured Data & Schema Integration",
+              desc: "NKTech implements structured data to help search engines understand your content contextually and accurately.",
+            },
+            {
+              title: "Conversational Keyword Targeting",
+              desc: "We focus on natural language queries, FAQs, and long-tail keywords that match how users interact with AI-driven platforms.",
+            },
+            {
+              title: "Entity-Based Optimization",
+              desc: "Our AEO strategy ensures your brand is recognized as an authoritative entity by both Google and answer engines.",
+            },
+            {
+              title: "Multiplatform Visibility",
+              desc: "From web search and voice to AI chatbots, NKTech helps you appear everywhere your customers are searching.",
+            },
+          ].map((item, i) => (
+            <li key={i} className="flex items-start gap-3">
+              <CheckCircle className="text-green-500 w-6 h-6 mt-1" />
+              <div>
+                <h3 className="font-semibold">{item.title}</h3>
+                <p>{item.desc}</p>
+              </div>
+            </li>
+          ))}
         </ul>
+      </section>
 
-        <h2 className="text-2xl font-semibold mt-10 mb-4 text-blue-600">Why NKTech is the Best AEO Company in Noida</h2>
-        <ul className="space-y-4 mb-8">
-          <li><strong>✅ AI-First Content Strategy:</strong> Clear, concise, and semantically rich content designed for AI interpretation.</li>
-          <li><strong>✅ Structured Data & Schema:</strong> Accurate contextual understanding via schema implementation.</li>
-          <li><strong>✅ Conversational Keyword Targeting:</strong> Natural language, long-tail queries, and FAQ optimization.</li>
-          <li><strong>✅ Entity-Based Optimization:</strong> Positioning your brand as a trustworthy entity.</li>
-          <li><strong>✅ Multiplatform Visibility:</strong> Optimized for web, voice, and AI chatbots.</li>
+      {/* Services */}
+      <section className="max-w-4xl mx-auto px-4 py-8">
+        <h2 className="text-2xl font-bold mb-6">NKTech’s AEO Services Include:</h2>
+        <ul className="list-disc list-inside space-y-2">
+          <li>Optimizing content for Google SGE and Bing AI</li>
+          <li>Creating FAQ-rich, zero-click content</li>
+          <li>AI-compatible meta tags and snippets</li>
+          <li>Schema markup implementation</li>
+          <li>Voice search optimization</li>
+          <li>Brand visibility audits for AI-based platforms</li>
         </ul>
+        <a href="#" className="text-pink-600 font-semibold block mt-4">
+          Get a Free AI SEO Audit
+        </a>
+      </section>
 
-        <h3 className="text-xl font-semibold mb-3">NKTech’s AEO Services Include:</h3>
-        <ul className="list-disc pl-6 mb-8">
-          <li>Content optimization for Google SGE and Bing AI</li>
-          <li>FAQ-rich, zero-click content creation</li>
-          <li>Schema markup and meta tag enhancement</li>
-          <li>Voice search and brand visibility optimization</li>
+      {/* Who Needs AEO */}
+      <section className="max-w-4xl mx-auto px-4 py-8">
+        <h2 className="text-2xl font-bold mb-6">Who Needs AEO?</h2>
+        <ul className="list-disc list-inside space-y-2">
+          <li>
+            <b>E-commerce brands</b> looking to boost visibility in AI shopping
+            recommendations
+          </li>
+          <li>
+            <b>Local businesses</b> wanting to appear in voice searches and
+            location-based answers
+          </li>
+          <li>
+            <b>Content creators & publishers</b> aiming to dominate AI-driven
+            featured snippets
+          </li>
+          <li>
+            <b>Startups & B2B companies</b> wanting to be the go-to answer in
+            their niche
+          </li>
         </ul>
+      </section>
 
-        <h3 className="text-xl font-semibold mb-3">Who Needs AEO?</h3>
-        <ul className="list-disc pl-6 mb-8">
-          <li>E-commerce brands</li>
-          <li>Local businesses targeting voice searches</li>
-          <li>Content creators & publishers</li>
-          <li>Startups & B2B companies</li>
-        </ul>
-
-        <blockquote className="p-4 border-l-4 border-blue-600 bg-blue-50 text-blue-800 italic mb-8">
-          “We’ve seen a 3X increase in traffic from voice and AI-driven sources since working with NKTech. Their AEO expertise is unmatched in Noida.”<br />– Priya Jain, E-commerce Founder
+      {/* Testimonial */}
+      <section className="max-w-4xl mx-auto px-4 py-8 border-t border-gray-200">
+        <h2 className="text-2xl font-bold mb-4">Client Testimonial</h2>
+        <blockquote className="italic text-gray-700">
+          “We’ve seen a 3X increase in traffic from voice and AI-driven sources
+          since working with NKTech. Their AEO expertise is unmatched in Noida.”
+          – Priya Jain, E-commerce Founder
         </blockquote>
+      </section>
 
-        <div className="mb-10">
-          <h3 className="text-2xl font-semibold text-blue-700 mb-4">The Future is Answer-Driven – Stay Ahead with NKTech</h3>
-          <p>If you want your brand to thrive in the age of AI and conversational search, Answer Engine Optimization is non-negotiable. Partner with <strong>NKTech</strong>, Noida’s top AEO agency, and future-proof your visibility today.</p>
-        </div>
+      {/* Final Words */}
+      <section className="max-w-4xl mx-auto px-4 py-8 border-t border-gray-200">
+        <h2 className="text-2xl font-bold mb-4">Final Words</h2>
+        <p className="mb-4">
+          If you want your brand to thrive in the age of AI and conversational
+          search, <b>Answer Engine Optimization</b> is non-negotiable. Partner
+          with <b>NKTech</b>, Noida’s top digital marketing agency for AEO, and
+          future-proof your visibility today.
+        </p>
+        <a href="#" className="text-pink-600 font-semibold">
+          Ready to Rank in AI Answers? Contact NKTech – The Best AEO Company in
+          Noida
+        </a>
+      </section>
 
-        <div className="bg-blue-100 p-6 rounded-lg text-center mb-10">
-          <h4 className="text-xl font-bold text-blue-700 mb-2">Ready to Rank in AI Answers?</h4>
-          <p className="mb-4">Contact NKTech – The Best AEO Company in Noida</p>
-          <button className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Get a Free AI SEO Audit</button>
+      {/* Footer */}
+      <footer className="bg-gray-100 py-6 mt-12">
+        <div className="max-w-4xl mx-auto px-4 text-center text-gray-600 text-sm">
+          © {new Date().getFullYear()} NKTech. All rights reserved.
         </div>
-
-        <div className="border-t pt-6">
-          <h4 className="text-lg font-semibold mb-2">Visitors FAQ’s:</h4>
-          <p><strong>Q:</strong> What is Google SGE (Search Generative Experience)?</p>
-          <p><strong>A:</strong> Google SGE is an experimental feature that uses generative AI to provide conversational, context-rich search results.</p>
-        </div>
-
-        <div className="text-sm text-gray-600 mt-10">
-          <p><strong>Keywords Used:</strong> NKTech, best AEO company in Noida, Answer Engine Optimization, digital marketing company in Noida, AI SEO Noida, optimize for Google SGE, voice search marketing, ChatGPT SEO</p>
-          <p><strong>Popular Searches:</strong> Best AEO Services in Noida, Best AI SEO Company in Noida, Best AEO agency in Noida</p>
-        </div>
-      </div>
-    </section>
+      </footer>
+    </div>
   );
 };
 
-export default AEOServices;
+export default AOEServices;

@@ -1,8 +1,9 @@
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import About from "./pages/AboutUs.jsx";
 import Services from "./pages/services/Services.jsx";
 import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx"; // ✅ Added Footer import
 
 import ServicesSection from "./components/ServicesSection .jsx";
 
@@ -53,61 +54,26 @@ function App() {
 
           {/* Digital Marketing */}
           <Route path="digitalmarketing" element={<DigitalMarketing />} />
-
-          <Route
-            path="digitalmarketing/aeoservices"
-            element={<AEOServices />}
-          />
-          <Route
-            path="digitalmarketing/seoservices"
-            element={<SeoServices />}
-          />
-          <Route
-            path="digitalmarketing/ormservices"
-            element={<ORMServices />}
-          />
-          <Route
-            path="digitalmarketing/smmservices"
-            element={<SMMServices />}
-          />
-          <Route
-            path="digitalmarketing/smoservices"
-            element={<SMOServices />}
-          />
-          <Route
-            path="digitalmarketing/ppcservices"
-            element={<PPCServices />}
-          />
-          <Route
-            path="digitalmarketing/vsoservices"
-            element={<VSOServices />}
-          />
+          <Route path="digitalmarketing/aeoservices" element={<AEOServices />} />
+          <Route path="digitalmarketing/seoservices" element={<SeoServices />} />
+          <Route path="digitalmarketing/ormservices" element={<ORMServices />} />
+          <Route path="digitalmarketing/smmservices" element={<SMMServices />} />
+          <Route path="digitalmarketing/smoservices" element={<SMOServices />} />
+          <Route path="digitalmarketing/ppcservices" element={<PPCServices />} />
+          <Route path="digitalmarketing/vsoservices" element={<VSOServices />} />
 
           {/* Web Development */}
           <Route path="webdevelopment" element={<WebDevelopment />} />
-          <Route
-            path="webdevelopment/webdesigning"
-            element={<WebDesigning />}
-          />
-          <Route
-            path="webdevelopment/webmaintanence"
-            element={<WebMaintanence />}
-          />
-          <Route
-            path="webdevelopment/webdeveloping"
-            element={<WebDeveloping />}
-          />
+          <Route path="webdevelopment/webdesigning" element={<WebDesigning />} />
+          <Route path="webdevelopment/webmaintanence" element={<WebMaintanence />} />
+          <Route path="webdevelopment/webdeveloping" element={<WebDeveloping />} />
 
           {/* Other Services */}
           <Route path="mobiledevelopment" element={<MobileDevelopment />} />
           <Route path="softwaredevelopment" element={<SoftwareDevelopment />} />
-
           <Route path="contentwriting" element={<ContentWriting />} />
           <Route path="graphicdesign" element={<GraphicDesigning />} />
-          <Route
-            path="politicalcampaignmanagement"
-            element={<PoliticalCampaignManagement />}
-          />
+          <Route path="politicalcampaignmanagement" element={<PoliticalCampaignManagement />} />
         </Route>
 
         <Route path="/portfolio" element={<Portfolio />} />
@@ -121,10 +87,13 @@ function App() {
         {/*software and apps*/}
         <Route path="/softwareandapps" element={<SoftwareAndApps />} />
         <Route path="/cart" element={<Cart />} />
-
       </Routes>
+
+      {/* ✅ Always visible footer */}
+      <Footer />
     </>
   );
 }
 
 export default App;
+  

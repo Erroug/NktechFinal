@@ -11,16 +11,15 @@ const NoidaContact = () => {
       <div className="w-24 mx-auto border-b border-gray-400 mb-6"></div>
 
       {/* Description */}
-      <p className="pt-7 text-center content-justify text-gray-600  mb-12">
+      <p className="pt-7 text-center content-justify text-gray-600 mb-12">
         Starting as a Digital Marketing Agency, we have expanded into Website
         Development, Software Development, and other IT solutions. Our
         dedication to our core values has fueled our growth over the past
         decade.
       </p>
 
-
       {/* Contact Section */}
-      <div className="grid grid-cols-1 md:grid-cols-3  gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Form */}
         <div className="pt-20 md:col-span-2 space-y-4">
           <input
@@ -56,60 +55,69 @@ const NoidaContact = () => {
         {/* Contact Info */}
         <div className="space-y-6">
           <div>
-            <h3 className="text-lg pt-30 font-semibold">Phone</h3>
+            <h3 className="text-lg pt-8 font-semibold">Phone</h3>
             <a
-              href="tel:+918920877101"
+              href="tel:+91 7836055511"
               className="text-blue-600 underline hover:underline"
             >
-              +91 8920 8771 01
+              +91 7836055511
             </a>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold">Mail</h3>
             <a
-              href="mailto:info@nktech.in"
+              href="mailto:info@bizwoke.in"
               className="text-red-500 underline hover:underline"
             >
-              info@nktech.in
+              info@bizwoke.in
             </a>
           </div>
+
           <div>
-            <h3 className="text-lg pt-30 font-semibold">Address</h3>
-            <a
-              href="address"
-              className="text-blue-600 hover:underline"
-            >
-              307B 3rd Floor I Thum Tower - A, sector 62 Noida 201301
+            <h3 className="text-lg pt-8 font-semibold">Address</h3>
+            <a href="address" className="text-blue-600 hover:underline">
+              307B 3rd Floor I Thum Tower - A, Sector 62, Noida 201301
             </a>
           </div>
         </div>
       </div>
 
-      <h2 className="text-center text-[#294A63] pt-30 text-4xl font-semibold mb-4">Our Services</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2  gap-10 pt-10">
+      {/* Our Services */}
+      <h2 className="text-center text-[#294A63] pt-8 text-4xl font-semibold mb-4">
+        Our Services
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10">
         <div>
-          <p className=" px-13 text-left text-lg  text-center content-justify text-gray-600">NKTech is a leading SEO and Digital Marketing Company in Noida, India. We also serve as a
-            renowned SEO and Website Designing Company in Ghaziabad, Noida, and Delhi. Since our
-            inception in 2012, we have consistently delivered exceptional services, helping businesses
-            grow by leveraging our expertise in SEO, PPC, SMO, and content writing.</p>
+          <p className="px-13 text-left text-lg text-center content-justify text-gray-600">
+            NKTech is a leading SEO and Digital Marketing Company in Noida,
+            India. We also serve as a renowned SEO and Website Designing Company
+            in Ghaziabad, Noida, and Delhi. Since our inception in 2012, we have
+            consistently delivered exceptional services, helping businesses grow
+            by leveraging our expertise in SEO, PPC, SMO, and content writing.
+          </p>
 
-          <p className="px-13 text-left text-lg text-center pt-5 content-justify text-gray-600">With over 550 satisfied
-            customers worldwide and 1000+ successful projects delivered, we are trusted by clients
-            from diverse sectors, including Hotels, Hospitals, FMCG companies, Doctors, Clinics, Schools,
-            Colleges, and many more.</p>
+          <p className="px-13 text-left text-lg text-center pt-5 content-justify text-gray-600">
+            With over 550 satisfied customers worldwide and 1000+ successful
+            projects delivered, we are trusted by clients from diverse sectors,
+            including Hotels, Hospitals, FMCG companies, Doctors, Clinics,
+            Schools, Colleges, and many more.
+          </p>
 
+          <h3 className="px-5 text-xl pl-13 font-bold text-[#294A63] pt-5 pb-5">
+            Our Journey
+          </h3>
 
-
-          <h3 className=" px-5 text-xl pl-13 font-bold text-[#294A63] pt-5 pb-5 ">Our Journey</h3>
-
-          <p className="px-13  text-left text-center text-lg content-justify text-gray-600  ">Started as a Digital Marketing
-            Agency, we have expanded into Website Development, Software Development, and other IT solutions.
-            Our dedication to our core values has fueled our growth over the past decade.</p>
+          <p className="px-13 text-left text-lg text-center content-justify text-gray-600">
+            Started as a Digital Marketing Agency, we have expanded into Website
+            Development, Software Development, and other IT solutions. Our
+            dedication to our core values has fueled our growth over the past
+            decade.
+          </p>
         </div>
 
-        <div className="">
-          <ul className="text-xl space-y-10  text-sm  ">
+        <div>
+          <ul className="text-xl space-y-10 text-sm">
             {[
               "SEO Services",
               "ORM Services",
@@ -122,24 +130,171 @@ const NoidaContact = () => {
                 key={i}
                 className="flex items-center gap-2 border-b border-gray-600 pb-2 hover:text-orange-400 transition-colors cursor-pointer"
               >
-                <FaChevronRight className="text-[#294A63] hover:text-orange-400 transition-colors cursor-pointer " /> {service}
+                <FaChevronRight className="text-[#294A63] hover:text-orange-400 transition-colors cursor-pointer" />{" "}
+                {service}
               </li>
             ))}
           </ul>
-
         </div>
-
       </div>
 
-            <div className="">
-              <h3 className=" text-center text-4xl pl-13 font-bold text-[#294A63] pt-5 pb-5 "> Our Big Step</h3>
-              <p className="px-13 text-center text-lg content-justify text-gray-600">We have developed a unique local ecosystem portal for cities, enabling users to find local businesses, jobs, news,
-                 events, and much more. Currently live in 30 cities, we aim to expand to 500 cities in the coming years.</p>
-              <div className=""></div>
+      {/* Our Expertise */}
+      <div className="mt-20">
+        <h2 className="text-center text-[#294A63] text-3xl font-semibold mb-10 relative">
+          <span className="px-4 bg-white relative z-10">Our Expertise</span>
+          <div className="absolute top-1/2 left-0 w-full border-t border-gray-400 z-0"></div>
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          {/* Left: Image */}
+          <div>
+            <img
+              src="/assets/digital-marketing.jpg"
+              alt="Our Expertise"
+              className="w-full h-100 object-cover rounded shadow"
+            />
+          </div>
+
+          {/* Right: Bullet Points */}
+          <div className="space-y-4 text-gray-700 text-lg">
+            <p>
+              • <strong>Digital Marketing:</strong> SEO, PPC, SMO, and content
+              writing.
+            </p>
+            <p>
+              • <strong>Website Services:</strong> Designing and development
+              tailored to your business needs.
+            </p>
+            <p>
+              • <strong>Software Development:</strong> Innovative software
+              solutions to drive business efficiency.
+            </p>
+            <p>
+              • <strong>Industry Reach:</strong> Experience in working with
+              Colleges, Universities, FMCG companies, Doctors, Clinics, and
+              various product-based businesses.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Our Big Step */}
+      <div className="mt-20">
+        <h2 className="text-center text-[#294A63] text-3xl font-semibold mb-6 relative">
+          <span className="px-4 bg-white relative z-10">Our Big Step</span>
+          <div className="absolute top-1/2 left-0 w-full border-t border-gray-400 z-0"></div>
+        </h2>
+
+        <p className="text-center text-gray-600 max-w-3xl mx-auto mb-12">
+          We have developed a unique local ecosystem portal for cities, enabling
+          users to find local businesses, jobs, news, events, and much more.{" "}
+          <br />
+          Currently live in 30 cities, we aim to expand to 500 cities in the
+          coming years.
+        </p>
+
+        {/* Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          {/* Vision */}
+          <div className="bg-white rounded-lg p-6 text-center transition" style={{boxShadow: '0 0 30px rgba(0, 0, 0, 0.3)'}}>
+            <h3 className="text-xl font-semibold text-[#294A63] mb-3 relative">
+              <span className="px-2 bg-white relative z-10">Vision</span>
+              <div className="absolute top-1/2 left-0 w-full border-t border-gray-300 z-0"></div>
+            </h3>
+            <p className="text-gray-600 text-justify">
+              To expand globally and provide exceptional IT services worldwide,
+              focusing on localized solutions tailored to customer needs and
+              capabilities.
+            </p>
+          </div>
+
+          {/* Mission */}
+          <div className="bg-white rounded-lg p-6 text-center transition" style={{boxShadow: '0 0 30px rgba(0, 0, 0, 0.3)'}}>
+            <h3 className="text-xl font-semibold text-[#294A63] mb-3 relative">
+              <span className="px-2 bg-white relative z-10">Mission</span>
+              <div className="absolute top-1/2 left-0 w-full border-t border-gray-300 z-0"></div>
+            </h3>
+            <p className="text-gray-600 text-justify">
+              To bring innovation and create value for customers through
+              technologically excellent products and services.
+            </p>
+          </div>
+
+          {/* Awards */}
+          <div className="bg-white rounded-lg p-6 text-center transition" style={{boxShadow: '0 0 30px rgba(0, 0, 0, 0.3)'}}>
+            <h3 className="text-xl font-semibold text-[#294A63] mb-3 relative">
+              <span className="px-2 bg-white relative z-10">
+                Awards and Achievements
+              </span>
+              <div className="absolute top-1/2 left-0 w-full border-t border-gray-300 z-0"></div>
+            </h3>
+            <div className="text-gray-600 text-left space-y-2">
+              <p>
+                <strong>• Winner of:</strong>
+              </p>
+              <p>Best Digital Marketing Company in Delhi NCR (2015, 2016)</p>
+              <p>Best Digital Marketing Company in Western UP (2016)</p>
+              <br />
+              <p>
+                <strong>• Shortlisted in:</strong>
+              </p>
+              <p>Top 20 Google Service Provider Company in India (2017)</p>
+              <p>
+                Top 20 Fastest Growing Digital Marketing Companies in India
+                (2017)
+              </p>
             </div>
+          </div>
+
+          {/* Government Projects */}
+          <div className="bg-white rounded-lg p-6 text-center transition" style={{boxShadow: '0 0 30px rgba(0, 0, 0, 0.3)'}}>
+            <h3 className="text-xl font-semibold text-[#294A63] mb-3 relative">
+              <span className="px-2 bg-white relative z-10">
+                Government Projects
+              </span>
+              <div className="absolute top-1/2 left-0 w-full border-t border-gray-300 z-0"></div>
+            </h3>
+            <div className="text-gray-600 text-left space-y-2">
+              <p>We proudly contribute to national initiatives and partnerships:</p>
+              <p>
+                • Worked with 15+ Municipal Corporations nationwide for the
+                Swachh Bharat Mission.
+              </p>
+              <p>
+                • Digital marketing for Ministry of Cooperation, Govt. of India.
+              </p>
+              <p>
+                <strong>• Partnered with:</strong>
+              </p>
+              <p>Khaadi Gramodhyog Board, Uttarakhand</p>
+              <p>India Smart Cities Events</p>
+              <p>Indo-Latin American Business Summit (2016)</p>
+              <p>UP Investor Business Summit (2018)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Google Map Section */}
+      <div className="mt-20">
+        <h2 className="text-center text-[#294A63] text-3xl font-semibold mb-6">
+          Our Location
+        </h2>
+        <div className="w-full h-[400px] rounded-lg overflow-hidden shadow-lg">
+          <iframe
+            title="Our Location"
+            src="https://www.google.com/maps?q=28.618249,77.363947&hl=en&z=16&output=embed"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
     </section>
   );
 };
-
 
 export default NoidaContact;

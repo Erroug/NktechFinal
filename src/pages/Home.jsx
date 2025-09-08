@@ -36,7 +36,7 @@ const Home = () => {
         <PopularSearches/>
 
     </outlet>
-        <Footer />
+        
     </>
   )
 }

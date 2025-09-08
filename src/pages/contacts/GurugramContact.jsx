@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPhoneAlt, FaMapMarkerAlt, FaChevronRight } from "react-icons/fa";
+import { FaChevronRight } from "react-icons/fa";
 
 const GurugramContact = () => {
   return (
@@ -10,38 +10,30 @@ const GurugramContact = () => {
       </h2>
       <div className="w-24 mx-auto border-b border-gray-400 mb-6"></div>
 
-      {/* Description */}
-      {/* <p className="pt-7 text-center content-justify text-gray-600  mb-12">
-        Starting as a Digital Marketing Agency, we have expanded into Website
-        Development, Software Development, and other IT solutions. Our
-        dedication to our core values has fueled our growth over the past
-        decade.
-      </p> */}
-
-      <h2 className="text-center text-[#294A63] pt-30 text-4xl font-semibold mb-4">Our Services</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2  gap-10 pt-10">
+      {/* Services Section */}
+      <h2 className="text-center text-[#294A63] pt-30 text-4xl font-semibold mb-4">
+        Our Services
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10">
         <div>
-          <p className=" px-13 text-left text-lg  text-center content-justify text-gray-600">NKTech is a leading SEO and Digital Marketing Company in Noida, India. We also serve as a
-            renowned SEO and Website Designing Company in Ghaziabad, Noida, and Delhi. Since our
-            inception in 2012, we have consistently delivered exceptional services, helping businesses
-            grow by leveraging our expertise in SEO, PPC, SMO, and content writing.</p>
+          <p className="px-13 text-left text-lg text-center content-justify text-gray-600">
+            NKTech is a leading SEO and Digital Marketing Company in Noida,
+            India. We also serve as a renowned SEO and Website Designing Company
+            in Ghaziabad, Noida, and Delhi. Since our inception in 2012, we have
+            consistently delivered exceptional services, helping businesses grow
+            by leveraging our expertise in SEO, PPC, SMO, and content writing.
+          </p>
 
-          <p className="px-13 text-left text-lg text-center pt-5 content-justify text-gray-600">With over 550 satisfied
-            customers worldwide and 1000+ successful projects delivered, we are trusted by clients
-            from diverse sectors, including Hotels, Hospitals, FMCG companies, Doctors, Clinics, Schools,
-            Colleges, and many more.</p>
-
-
-
-          {/* <h3 className=" px-5 text-xl pl-13 font-bold text-[#294A63] pt-5 pb-5 ">Our Journey</h3>
-
-          <p className="px-13  text-left text-center text-lg content-justify text-gray-600  ">Started as a Digital Marketing
-            Agency, we have expanded into Website Development, Software Development, and other IT solutions.
-            Our dedication to our core values has fueled our growth over the past decade.</p> */}
+          <p className="px-13 text-left text-lg text-center pt-5 content-justify text-gray-600">
+            With over 550 satisfied customers worldwide and 1000+ successful
+            projects delivered, we are trusted by clients from diverse sectors,
+            including Hotels, Hospitals, FMCG companies, Doctors, Clinics,
+            Schools, Colleges, and many more.
+          </p>
         </div>
 
-        <div className="">
-          <ul className="text-xl space-y-10  text-sm  ">
+        <div>
+          <ul className="text-xl space-y-10 text-sm">
             {[
               "SEO Services",
               "ORM Services",
@@ -54,29 +46,18 @@ const GurugramContact = () => {
                 key={i}
                 className="flex items-center gap-2 border-b border-gray-600 pb-2 hover:text-orange-400 transition-colors cursor-pointer"
               >
-                <FaChevronRight className="text-[#294A63] hover:text-orange-400 transition-colors cursor-pointer " /> {service}
+                <FaChevronRight className="text-[#294A63] hover:text-orange-400 transition-colors cursor-pointer" />
+                {service}
               </li>
             ))}
           </ul>
-
         </div>
-
       </div>
 
-            {/* <div className="">
-              <h3 className=" text-center text-4xl pl-13 font-bold text-[#294A63] pt-5 pb-5 "> Our Big Step</h3>
-              <p className="px-13 text-center text-lg content-justify text-gray-600">We have developed a unique local ecosystem portal for cities, enabling users to find local businesses, jobs, news,
-                 events, and much more. Currently live in 30 cities, we aim to expand to 500 cities in the coming years.</p>
-              <div className=""></div>
-            </div> */}
-
-
-
-
-                {/* Contact Section */}
-      <div className="grid grid-cols-1 md:grid-cols-3  gap-10">
+      {/* Contact Section */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 pt-20">
         {/* Form */}
-        <div className="pt-20 md:col-span-2 space-y-4">
+        <div className="md:col-span-2 space-y-4">
           <input
             type="text"
             placeholder="Name"
@@ -112,38 +93,55 @@ const GurugramContact = () => {
           <div>
             <h3 className="text-lg pt-30 font-semibold">Phone</h3>
             <a
-              href="tel:+918920877101"
+              href="tel:+91 7836055511"
               className="text-blue-600 underline hover:underline"
             >
-              +91 8920 8771 01
+              +91 7836055511
             </a>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold">Mail</h3>
             <a
-              href="mailto:info@nktech.in"
+              href="mailto:info@bizwoke.in"
               className="text-red-500 underline hover:underline"
             >
-              info@nktech.in
+              info@bizwoke.in
             </a>
           </div>
           <div>
             <h3 className="text-lg pt-30 font-semibold">Address</h3>
-            <a
-              href="address"
-              className="text-blue-600 hover:underline"
-            >
+            <a href="address" className="text-blue-600 hover:underline">
               307B 3rd Floor I Thum Tower - A, sector 62 Noida 201301
             </a>
           </div>
         </div>
       </div>
 
+      {/* Location Map */}
+      <div className="pt-16">
+        <h2 className="text-center text-[#294A63] text-2xl font-semibold mb-4">
+          Our Location - DLF Tower, 8th Rd, Cyber City, Gurugram
+        </h2>
+        <div className="w-full h-96">
+          <iframe
+            title="DLF Tower, Cyber City Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.2680241741443!2d77.08999387495741!3d28.494580375745415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d193e0cdd85a7%3A0x4fef2585086ed2b8!2sDLF%20Tower%2C%208th%20Rd%2C%20DLF%20Cyber%20City%2C%20DLF%20Phase%202%2C%20Sector%2024%2C%20Gurugram%2C%20Haryana%20122002!5e0!3m2!1sen!2sin!4v1693812345678"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+
+      {/* Footer Placeholder */}
       <>
-      <footer/>
+        <footer />
       </>
     </section>
   );
 };
-export default GurugramContact
+
+export default GurugramContact;
