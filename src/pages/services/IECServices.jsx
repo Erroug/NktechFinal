@@ -200,15 +200,19 @@ export default function IECServices() {
 
       {/* Why Choose Us */}
       <section className="py-16 px-6 text-center bg-gray-50">
-        <h2 className="text-3xl text-[#294A63] font-bold mb-8">Why Choose Bizwoke Nova for IEC?</h2>
-        <ul className="max-w-3xl mx-auto space-y-4 text-lg text-gray-700">
-          {whyChooseUs.map((point, i) => (
-            <li key={i} className="flex items-center justify-center gap-3 font-medium">
-              <CheckCircle className="text-blue-600" size={22} /> {point}
-            </li>
-          ))}
-        </ul>
-      </section>
+  <h2 className="text-3xl text-[#294A63] font-bold mb-8">
+    Why Choose Bizwoke Nova for IEC?
+  </h2>
+  <ul className="max-w-1/2 mx-auto space-y-4 text-lg text-gray-700 text-justify">
+    {whyChooseUs.map((point, i) => (
+      <li key={i} className="flex items-start gap-3 font-medium">
+        <CheckCircle className="text-blue-600 flex-shrink-0 mt-1" size={22} />
+        <span className="text-justify">{point}</span>
+      </li>
+    ))}
+  </ul>
+</section>
+
 
       {/* Calendar Section */}
       <section className="py-16 px-6 max-w-5xl mx-auto">
