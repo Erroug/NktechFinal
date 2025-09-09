@@ -2,7 +2,18 @@ import React from "react";
 import { CheckCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
-// Reusable Card Component
+// 🔹 Reusable Section Heading Component
+const SectionHeading = ({ children }) => (
+  <div className="flex items-center justify-center gap-4 mb-12">
+    <div className="flex-1 border-t border-gray-400"></div>
+    <h2 className="text-3xl text-[#294A63] font-bold whitespace-nowrap">
+      {children}
+    </h2>
+    <div className="flex-1 border-t border-gray-300"></div>
+  </div>
+);
+
+// 🔹 Reusable Card Component
 const Card = ({ title, points, isBig }) => (
   <div
     className={`bg-white p-${isBig ? "8" : "6"} rounded-xl shadow-xl hover:shadow-md transition ${
@@ -163,7 +174,7 @@ export default function IECServices() {
       {/* About Section */}
       <section className="py-16 px-6 text-center bg-gray-50">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl text-[#294A63] font-bold mb-6">About Our IEC Services</h2>
+          <SectionHeading>About Our IEC Services</SectionHeading>
           <p className="text-lg text-gray-700 leading-relaxed">
             At Bizwoke Nova, we specialize in delivering Information, Education,
             and Communication (IEC) services tailored for Urban Local Bodies
@@ -180,7 +191,7 @@ export default function IECServices() {
 
       {/* Our Offerings */}
       <section className="py-16 px-6 max-w-6xl mx-auto">
-        <h2 className="text-3xl text-[#294A63] font-bold text-center mb-12">Our Offerings</h2>
+        <SectionHeading>Our Offerings</SectionHeading>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {offerings.map((offering, i) => (
             <Card key={i} {...offering} />
@@ -190,7 +201,7 @@ export default function IECServices() {
 
       {/* IEC Features */}
       <section className="py-16 px-6 max-w-6xl mx-auto">
-        <h2 className="text-3xl text-[#294A63] font-bold text-center mb-12">Our IEC Features for ULBs</h2>
+        <SectionHeading>Our IEC Features for ULBs</SectionHeading>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {iecFeatures.map((feature, i) => (
             <Card key={i} title={feature.title} points={feature.points} />
@@ -200,23 +211,20 @@ export default function IECServices() {
 
       {/* Why Choose Us */}
       <section className="py-16 px-6 text-center bg-gray-50">
-  <h2 className="text-3xl text-[#294A63] font-bold mb-8">
-    Why Choose Bizwoke Nova for IEC?
-  </h2>
-  <ul className="max-w-1/2 mx-auto space-y-4 text-lg text-gray-700 text-justify">
-    {whyChooseUs.map((point, i) => (
-      <li key={i} className="flex items-start gap-3 font-medium">
-        <CheckCircle className="text-blue-600 flex-shrink-0 mt-1" size={22} />
-        <span className="text-justify">{point}</span>
-      </li>
-    ))}
-  </ul>
-</section>
-
+        <SectionHeading>Why Choose Bizwoke Nova for IEC?</SectionHeading>
+        <ul className="max-w-2xl mx-auto space-y-4 text-lg text-gray-700 text-justify">
+          {whyChooseUs.map((point, i) => (
+            <li key={i} className="flex items-start gap-3 font-medium">
+              <CheckCircle className="text-blue-600 flex-shrink-0 mt-1" size={22} />
+              <span className="text-justify">{point}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
 
       {/* Calendar Section */}
       <section className="py-16 px-6 max-w-5xl mx-auto">
-        <h2 className="text-3xl text-[#294A63] font-bold text-center mb-8">Sample IEC Activities Calendar (ULB Campaign)</h2>
+        <SectionHeading>Sample IEC Activities Calendar (ULB Campaign)</SectionHeading>
         <div className="overflow-x-auto">
           <table className="min-w-full border border-gray-200 text-left">
             <thead className="bg-[#294A63] text-white">
@@ -242,7 +250,7 @@ export default function IECServices() {
 
       {/* Final CTA */}
       <section className="py-16 px-6 text-center bg-[#294A63] text-white">
-        <h2 className="text-3xl font-bold mb-6">Let’s Build a Cleaner, Smarter Bulandshahr (and Beyond) Together</h2>
+      <h2 className="text-3xl font-bold mb-6">Let’s Build a Cleaner, Smarter Bulandshahr (and Beyond) Together</h2>
         <p className="max-w-3xl mx-auto mb-8 text-lg">
           With Bizwoke Nova’s IEC expertise, your ULB can create impactful
           campaigns that educate, engage, and empower citizens—ensuring better
