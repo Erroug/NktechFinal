@@ -24,6 +24,7 @@ import WebMaintanence from "./pages/services/WebDevopment/WebMaintenance.jsx";
 import WebDeveloping from "./pages/services/WebDevopment/webDeveloping.jsx";
 
 // Other Services
+import IECServices from "./pages/services/IECServices.jsx";
 import MobileDevelopment from "./pages/services/MobileDeveloment.jsx";
 import SoftwareDevelopment from "./pages/services/SoftwareDevelopment.jsx";
 import ContentWriting from "./pages/services/ContentWriting.jsx";
@@ -69,6 +70,7 @@ function App() {
           <Route path="webdevelopment/webdeveloping" element={<WebDeveloping />} />
 
           {/* Other Services */}
+          <Route path="IECServices" element={<IECServices/>}/>
           <Route path="mobiledevelopment" element={<MobileDevelopment />} />
           <Route path="softwaredevelopment" element={<SoftwareDevelopment />} />
           <Route path="contentwriting" element={<ContentWriting />} />

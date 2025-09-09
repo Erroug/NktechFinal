@@ -34,9 +34,7 @@ const webDeveloping = () => {
                   className="max-w-[120px] md:max-w-[150px] h-auto"
                 />
               </div>
-              <h3 className="text-orange-500 text-xl font-bold mb-3">
-                Company Identity
-              </h3>
+             
               <p className="text-white leading-6">
               PrestaShop is a freemium, open source e-commerce solution. The software 
               is published under the Open Software License. It is written in the PHP programming
@@ -53,9 +51,7 @@ const webDeveloping = () => {
                   className="max-w-[120px] md:max-w-[150px] h-auto"
                 />
               </div>
-              <h3 className="text-orange-500 text-xl font-bold mb-3">
-                Company Identity
-              </h3>
+           
               <p className="text-white leading-6">
                 The DOT NET Framework’s Base Class Library offers user interface,
                 database connectivity, data access, cryptography, web application
@@ -72,9 +68,7 @@ const webDeveloping = () => {
                   className="max-w-[120px] md:max-w-[150px] h-auto"
                 />
               </div>
-              <h3 className="text-orange-500 text-xl font-bold mb-3">
-                Company Identity
-              </h3>
+             
               <p className="text-white leading-6">
               Angular is a TypeScript-based open-source web application framework led by the Angular Team at 
               Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS.
@@ -90,9 +84,7 @@ const webDeveloping = () => {
                   className="max-w-[120px] md:max-w-[150px] h-auto"
                 />
               </div>
-              <h3 className="text-orange-500 text-xl font-bold mb-3">
-                Company Identity
-              </h3>
+             
               <p className="text-white leading-6">
               Shopify Inc. is a Canadian multinational e-commerce company headquartered in Ottawa, Ontario. It is also the name of 
               its proprietary e-commerce platform for online stores and retail point-of-sale systems.
@@ -108,9 +100,7 @@ const webDeveloping = () => {
                   className="max-w-[120px] md:max-w-[150px] h-auto"
                 />
               </div>
-              <h3 className="text-orange-500 text-xl font-bold mb-3">
-                Company Identity
-              </h3>
+             
               <p className="text-white leading-6">
               Magento is an open-source e-commerce platform written in PHP. The software
                was originally developed by Varien, Inc, a US private company headquartered
@@ -128,9 +118,7 @@ const webDeveloping = () => {
                   className="max-w-[120px] md:max-w-[150px] h-auto"
                 />
               </div>
-              <h3 className="text-orange-500 text-xl font-bold mb-3">
-                Social Post Design
-              </h3>
+              
               <p className="text-white leading-6">
               Joomla is a free and open-source content management system for publishing web content, developed by 
               Open Source Matters, Inc. It is built on a model–view–controller web application framework that can be used independently of the CMS.
@@ -146,9 +134,7 @@ const webDeveloping = () => {
                   className="max-w-[120px] md:max-w-[150px] h-auto"
                 />
               </div>
-              <h3 className="text-orange-500 text-xl font-bold mb-3">
-                Logo
-              </h3>
+              
               <p className="text-white leading-6">
               WordPress is a content management system based on PHP and MySQL that is usually used with the MySQL or MariaDB
                database servers but can also use the SQLite database engine. Features include a plugin architecture and a template system.
