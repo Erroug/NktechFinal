@@ -31,7 +31,7 @@ export const menuItems = [
           { label: "Web Development", to: "/services/webdevelopment/webdeveloping" },
         ],
       },
-      { label: "IECServices", to: "/services/IECServices" },
+      { label: "SBM IEC Services ", to: "/services/IECServices" },
       { label: "Mobile App Development", to: "/services/mobiledevelopment" },
       { label: "Software Development", to: "/services/softwaredevelopment" },
       { label: "Content Writing", to: "/services/contentwriting" },

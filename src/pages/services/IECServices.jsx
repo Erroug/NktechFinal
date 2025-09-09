@@ -86,10 +86,79 @@ export default function IECServices() {
         </div>
       </section>
 
+
+                  {/* Highlights Section (Our Offerings) */}
+      <section className="py-16 px-6 max-w-6xl mx-auto">
+        <h2 className="text-3xl text-[#294A63] font-bold text-center mb-12">
+          Our Offerings
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          {/* Big Top Card (IPC) */}
+          <div className="md:col-span-2 bg-[#294A63] text-white p-8 rounded-2xl shadow-xl">
+            <h3 className="text-2xl text-center font-bold mb-6">1. IPC (Interpersonal Communication)</h3>
+            <p> Interpersonal Communication (IPC) is the most powerful tool under the Swachh Bharat 
+            Mission for driving lasting behavior change. It focuses on direct, face-to-face engagement 
+            with citizens through activities like Mohalla meetings, RWA sessions, Safaimitra interactions,
+             school programs, and door-to-door campaigns. IPC ensures that every household understands the 
+             importance of segregating wet and dry waste, reducing plastic use, and adopting 3R practices
+              (Reduce, Reuse, Recycle). At NKTech, we design cost-effective IPC models that combine community
+               participation and volunteer engagement, ensuring maximum impact while complying with SBM Toolkit
+                norms. IPC is where awareness becomes action. </p>
+          </div>
+
+          {/* Mid Media */}
+          <div className="bg-white p-6 rounded-xl shadow-xl hover:shadow-lg transition">
+            <h4 className="text-lg font-semibold text-[#294A63] mb-4">2. Mid Media</h4>
+            <ul className="space-y-2 text-gray-600 text-sm">
+              <li>● Street plays &amp; roadshows</li>
+              <li>● Wall paintings &amp; graffiti art</li>
+              <li>● IEC kiosks &amp; Waste-to-Wonder park activities</li>
+              <li>● Exhibitions &amp; competitions</li>
+            </ul>
+          </div>
+
+          {/* Mass Media */}
+          <div className="bg-white p-6 rounded-xl shadow-xl hover:shadow-lg transition">
+            <h4 className="text-lg font-semibold text-[#294A63] mb-4">3. Mass Media</h4>
+            <ul className="space-y-2 text-gray-600 text-sm">
+              <li>● FM radio jingles</li>
+              <li>● Newspaper ads &amp; articles</li>
+              <li>● Local cable TV coverage</li>
+            </ul>
+          </div>
+
+          {/* Social Media */}
+          <div className="bg-white p-6 rounded-xl shadow-xl hover:shadow-lg transition">
+            <h4 className="text-lg font-semibold text-[#294A63] mb-4">4. Social Media</h4>
+            <ul className="space-y-2 text-gray-600 text-sm">
+              <li>● WhatsApp campaigns</li>
+              <li>● Short reels &amp; posters</li>
+              <li>● Swachhata challenges (#MyCleanWard, #SwachhBulandshahr)</li>
+            </ul>
+          </div>
+
+          {/* Strategic Partnerships */}
+          <div className="bg-white p-6 rounded-xl shadow-xl hover:shadow-lg transition">
+            <h4 className="text-lg font-semibold text-[#294A63] mb-4">5. Strategic Partnerships</h4>
+            <ul className="space-y-2 text-gray-600 text-sm">
+              <li>● CSR tie-ups for merchandise (jute bags, bins, caps, umbrellas)</li>
+              <li>● Local NGOs, NCC/NSS, and industry collaborations</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
       {/* IEC Offerings */}
       <section className="py-16 px-6  max-w-6xl mx-auto">
         <h2 className="text-3xl text-[#294A63] font-bold text-center mb-12">
-          Our IEC Offerings for ULBs
+          Our IEC Features for ULBs
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {[
