@@ -3,7 +3,7 @@ import Home from "./pages/Home.jsx";
 import About from "./pages/AboutUs.jsx";
 import Services from "./pages/services/Services.jsx";
 import Navbar from "./components/Navbar.jsx";
-import Footer from "./components/Footer.jsx"; // ✅ Added Footer import
+import Footer from "./components/Footer.jsx";
 
 import ServicesSection from "./components/ServicesSection .jsx";
 
