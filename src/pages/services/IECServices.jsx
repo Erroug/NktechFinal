@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 
 // 🔹 Reusable Section Heading Component
 const SectionHeading = ({ children }) => (
-  <div className="flex items-center justify-center gap-4 mb-12">
-    <div className="flex-1 border-t border-gray-400"></div>
-    <h2 className="text-3xl text-[#294A63] font-bold whitespace-nowrap">
+  <div className="flex items-center justify-center gap-4 mb-12 px-2">
+    <div className="hidden sm:flex flex-1 border-t border-gray-400"></div>
+    <h2 className="text-2xl sm:text-3xl text-[#294A63] font-bold text-center leading-snug">
       {children}
     </h2>
-    <div className="flex-1 border-t border-gray-300"></div>
+    <div className="hidden sm:flex flex-1 border-t border-gray-300"></div>
   </div>
 );
 
@@ -43,7 +43,7 @@ export default function IECServices() {
     {
       title: "IPC (Interpersonal Communication)",
       points: [
-        "Interpersonal Communication (IPC) is the most powerful tool under the Swachh Bharat Mission for driving lasting behavior change. It focuses on direct, face-to-face engagement with citizens through activities like Mohalla meetings, RWA sessions, Safaimitra interactions, school programs, and door-to-door campaigns. IPC ensures that every household understands the importance of segregating wet and dry waste, reducing plastic use, and adopting 3R practices (Reduce, Reuse, Recycle). At NKTech, we design cost-effective IPC models that combine community participation and volunteer engagement, ensuring maximum impact while complying with SBM Toolkit norms. IPC is where awareness becomes action.",
+        "Interpersonal Communication (IPC) is the most powerful tool under the Swachh Bharat Mission for driving lasting behavior change. It focuses on direct, face-to-face engagement with citizens through activities like Mohalla meetings, RWA sessions, Safaimitra interactions, school programs, and door-to-door campaigns. IPC ensures that every household understands the importance of segregating wet and dry waste, reducing plastic use, and adopting 3R practices (Reduce, Reuse, Recycle). At Bizwoke, we design cost-effective IPC models that combine community participation and volunteer engagement, ensuring maximum impact while complying with SBM Toolkit norms. IPC is where awareness becomes action.",
       ],
       isBig: true,
     },
@@ -127,13 +127,13 @@ export default function IECServices() {
   return (
     <div className="bg-white text-gray-800">
       {/* Hero Section */}
-      <section className="relative bg-[#294A63] text-white text-center py-20 px-6 overflow-hidden">
+      <section className="relative bg-[#294A63] text-white text-center py-16 md:py-20 px-4 sm:px-6 overflow-hidden">
         <div className="max-w-4xl mx-auto">
           <motion.h1
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-4xl md:text-5xl font-bold mb-6"
+            className="text-2xl sm:text-3xl md:text-5xl font-bold mb-6"
           >
             Empowering ULBs with Impactful IEC Solutions
           </motion.h1>
@@ -141,7 +141,7 @@ export default function IECServices() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-            className="text-lg md:text-xl mb-8"
+            className="text-base sm:text-lg md:text-xl mb-8"
           >
             Driving awareness, participation, and behavioral change through
             digital + on-ground IEC campaigns aligned with Swachh Bharat Mission
@@ -172,10 +172,10 @@ export default function IECServices() {
       </section>
 
       {/* About Section */}
-      <section className="py-16 px-6 text-center bg-gray-50">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 text-center bg-gray-50">
         <div className="max-w-3xl mx-auto">
           <SectionHeading>About Our IEC Services</SectionHeading>
-          <p className="text-lg text-gray-700 leading-relaxed">
+          <p className="text-base sm:text-lg text-gray-700 leading-relaxed text-justify sm:text-center">
             At Bizwoke Nova, we specialize in delivering Information, Education,
             and Communication (IEC) services tailored for Urban Local Bodies
             (ULBs). Our goal is to help municipalities inform citizens, engage
@@ -190,7 +190,7 @@ export default function IECServices() {
       </section>
 
       {/* Our Offerings */}
-      <section className="py-16 px-6 max-w-6xl mx-auto">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 max-w-6xl mx-auto">
         <SectionHeading>Our Offerings</SectionHeading>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {offerings.map((offering, i) => (
@@ -200,7 +200,7 @@ export default function IECServices() {
       </section>
 
       {/* IEC Features */}
-      <section className="py-16 px-6 max-w-6xl mx-auto">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 max-w-6xl mx-auto">
         <SectionHeading>Our IEC Features for ULBs</SectionHeading>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {iecFeatures.map((feature, i) => (
@@ -210,23 +210,29 @@ export default function IECServices() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-16 px-6 text-center bg-gray-50">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 text-center bg-gray-50">
         <SectionHeading>Why Choose Bizwoke Nova for IEC?</SectionHeading>
-        <ul className="max-w-2xl mx-auto space-y-4 text-lg text-gray-700 text-justify">
+        <ul className="max-w-2xl mx-auto space-y-4 text-sm sm:text-base md:text-lg text-gray-700 text-left">
           {whyChooseUs.map((point, i) => (
-            <li key={i} className="flex items-start gap-3 font-medium">
+            <li key={i} className="flex items-start gap-3 font-medium leading-relaxed">
               <CheckCircle className="text-blue-600 flex-shrink-0 mt-1" size={22} />
-              <span className="text-justify">{point}</span>
+              <span>{point}</span>
             </li>
           ))}
         </ul>
       </section>
 
       {/* Calendar Section */}
-      <section className="py-16 px-6 max-w-5xl mx-auto">
-        <SectionHeading>Sample IEC Activities Calendar (ULB Campaign)</SectionHeading>
-        <div className="overflow-x-auto">
-          <table className="min-w-full border border-gray-200 text-left">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 max-w-5xl mx-auto">
+        <SectionHeading>
+          <span className="block text-center leading-snug">
+            Sample IEC Activities Calendar <br className="md:hidden" /> (ULB Campaign)
+          </span>
+        </SectionHeading>
+
+        {/* Desktop Table */}
+        <div className="hidden md:block overflow-x-auto">
+          <table className="min-w-full border border-gray-200 text-left text-sm md:text-base">
             <thead className="bg-[#294A63] text-white">
               <tr>
                 <th className="px-4 py-2">Month</th>
@@ -246,12 +252,26 @@ export default function IECServices() {
             </tbody>
           </table>
         </div>
+
+        {/* Mobile Card View */}
+        <div className="block md:hidden space-y-4">
+          {calendar.map((row, i) => (
+            <div key={i} className="border border-gray-200 rounded-lg p-4 bg-white shadow-sm text-sm">
+              <p><span className="font-semibold text-[#294A63]">Month:</span> {row[0]}</p>
+              <p><span className="font-semibold text-[#294A63]">Key Activity:</span> {row[1]}</p>
+              <p><span className="font-semibold text-[#294A63]">Mode:</span> {row[2]}</p>
+              <p><span className="font-semibold text-[#294A63]">Toolkit Alignment:</span> {row[3]}</p>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 px-6 text-center bg-[#294A63] text-white">
-      <h2 className="text-3xl font-bold mb-6">Let’s Build a Cleaner, Smarter Bulandshahr (and Beyond) Together</h2>
-        <p className="max-w-3xl mx-auto mb-8 text-lg">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 text-center bg-[#294A63] text-white">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-6">
+          Let’s Build a Cleaner, Smarter Bulandshahr (and Beyond) Together
+        </h2>
+        <p className="max-w-3xl mx-auto mb-8 text-sm sm:text-base md:text-lg">
           With Bizwoke Nova’s IEC expertise, your ULB can create impactful
           campaigns that educate, engage, and empower citizens—ensuring better
           Swachh Survekshan 2025 rankings and sustainable cleanliness.
