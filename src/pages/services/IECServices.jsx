@@ -5,32 +5,35 @@ import { motion } from "framer-motion";
 // 🔹 Reusable Section Heading Component
 const SectionHeading = ({ children }) => (
   <div className="flex items-center justify-center gap-4 mb-12 px-2">
-    <div className="hidden sm:flex flex-1 border-t border-gray-400"></div>
+    <div className="flex-1 border-t border-gray-400"></div> {/* Left line */}
     <h2 className="text-2xl sm:text-3xl text-[#294A63] font-bold text-center leading-snug">
       {children}
     </h2>
-    <div className="hidden sm:flex flex-1 border-t border-gray-300"></div>
+    <div className="flex-1 border-t border-gray-400"></div> {/* Right line */}
   </div>
 );
+
 
 // 🔹 Reusable Card Component
 const Card = ({ title, points, isBig }) => (
   <div
-    className={`bg-white p-${isBig ? "8" : "6"} rounded-xl shadow-xl hover:shadow-md transition ${
+    className={`bg-white ${isBig ? "p-8" : "p-6"} rounded-xl shadow-xl hover:shadow-md transition ${
       isBig ? "md:col-span-2" : ""
     }`}
   >
     <h3
-      className={`text-${isBig ? "2xl" : "xl"} font-semibold mb-6 text-blue-700 text-center`}
+      className={`${
+        isBig ? "text-2xl" : "text-xl"
+      } font-semibold mb-6 text-blue-700 text-center`}
     >
       {title}
     </h3>
     <div className="flex justify-center">
-      <ul className="space-y-2 text-gray-700 text-left max-w-4xl w-full">
+      <ul className="space-y-3 text-gray-700 text-base sm:text-lg leading-relaxed max-w-4xl w-full">
         {points.map((point, i) => (
-          <li key={i} className="flex gap-2 items-start">
-            <CheckCircle className="text-green-600 mt-1" size={18} />
-            {point}
+          <li key={i} className="flex items-start gap-3">
+            <CheckCircle className="text-green-600 w-[22px] h-[22px] flex-shrink-0 mt-[2px]" />
+            <span>{point}</span>
           </li>
         ))}
       </ul>
@@ -212,15 +215,12 @@ export default function IECServices() {
       {/* Why Choose Us */}
       <section className="py-12 sm:py-16 px-4 sm:px-6 text-center bg-gray-50">
         <SectionHeading>Why Choose Bizwoke Nova for IEC?</SectionHeading>
-        <ul className="max-w-2xl mx-auto space-y-4 text-sm sm:text-base md:text-lg text-gray-700 text-left">
+        <ul className="max-w-2xl mx-auto space-y-4 text-base sm:text-lg text-gray-700 text-left leading-relaxed">
           {whyChooseUs.map((point, i) => (
             <li key={i} className="flex items-start gap-3 font-medium">
-  <span className="flex items-start justify-center">
-    <CheckCircle className="text-blue-600 w-[22px] h-[22px] flex-shrink-0" />
-  </span>
-  <span className="text-justify">{point}</span>
-</li>
-
+              <CheckCircle className="text-blue-600 w-[22px] h-[22px] flex-shrink-0 mt-[2px]" />
+              <span>{point}</span>
+            </li>
           ))}
         </ul>
       </section>
@@ -274,7 +274,7 @@ export default function IECServices() {
         <h2 className="text-2xl sm:text-3xl font-bold mb-6">
           Let’s Build a Cleaner, Smarter Bulandshahr (and Beyond) Together
         </h2>
-        <p className="max-w-3xl mx-auto mb-8 text-sm sm:text-base md:text-lg">
+        <p className="max-w-3xl mx-auto mb-8 text-base sm:text-lg leading-relaxed">
           With Bizwoke Nova’s IEC expertise, your ULB can create impactful
           campaigns that educate, engage, and empower citizens—ensuring better
           Swachh Survekshan 2025 rankings and sustainable cleanliness.
