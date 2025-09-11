@@ -16,9 +16,8 @@ const SectionHeading = ({ children }) => (
 // 🔹 Reusable Card Component
 const Card = ({ title, points, isBig }) => (
   <div
-    className={`bg-white p-${isBig ? "8" : "6"} rounded-xl shadow-xl hover:shadow-md transition ${
-      isBig ? "md:col-span-2" : ""
-    }`}
+    className={`bg-white p-${isBig ? "8" : "6"} rounded-xl shadow-xl hover:shadow-md transition ${isBig ? "md:col-span-2" : ""
+      }`}
   >
     <h3
       className={`text-${isBig ? "2xl" : "xl"} font-semibold mb-6 text-blue-700 text-center`}
@@ -214,10 +213,11 @@ export default function IECServices() {
         <SectionHeading>Why Choose Bizwoke Nova for IEC?</SectionHeading>
         <ul className="max-w-2xl mx-auto space-y-4 text-sm sm:text-base md:text-lg text-gray-700 text-left">
           {whyChooseUs.map((point, i) => (
-            <li key={i} className="flex items-start gap-3 font-medium leading-relaxed">
-              <CheckCircle className="text-blue-600 flex-shrink-0 mt-1" size={22} />
-              <span>{point}</span>
+            <li key={i} className="flex items-start gap-3 font-medium">
+              <CheckCircle className="text-blue-600 w-6 h-6 flex-shrink-0 mt-1" />
+              <span className="text-justify">{point}</span>
             </li>
+
           ))}
         </ul>
       </section>
