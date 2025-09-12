@@ -74,7 +74,7 @@ const AustraliaContact = () => {
               info@bizwoke.in
             </a>
           </div>
-          <div>
+          {/* <div>
             <h3 className="text-lg pt-30 font-semibold">Address</h3>
             <a
               href="address"
@@ -82,7 +82,7 @@ const AustraliaContact = () => {
             >
               307B 3rd Floor I Thum Tower - A, sector 62 Noida 201301
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
 
