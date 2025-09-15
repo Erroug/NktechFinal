@@ -9,7 +9,7 @@ const WhoAreWe = () => {
         </h2>
         <p className="text-[#7a7a7a] text-lg leading-7 font-Roboto Sans-serif text-justify mt-6"></p>
         Since 2012, Bizwoke has been rated as the, <span className="font-semibold text-black-600">Best SEO company in Noida and Delhi NCR</span >,
-        also known as <span className="text-red-500 underline">Best SEO company in Noida </span> and <span className="text-red-500"> Delhi NCR</span> by our esteemed clients. NKTech is the only agency that offers
+        also known as <span className="text-red-500 underline">Best SEO company in Noida </span> and <span className="text-red-500"> Delhi NCR</span> by our esteemed clients. Bizwoke is the only agency that offers
         guaranteed SEO services with white hat SEO strategies. We began our journey as a Website Development
         and Digital Marketing agency, growing exponentially since our inception.
 
