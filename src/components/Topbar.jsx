@@ -11,7 +11,7 @@ import {
 
 const Topbar = () => {
   return (
-    <div className="bg-[#093256] h-16 text-white text-sm py-2 px-4 flex justify-between items-center">
+    <div className="bg-[#294a63] h-16 text-white text-sm py-2 px-4 flex justify-between items-center">
       {/* Phone */}
       <div className="flex items-center gap-2">
         <PhoneCall size={18} />
