@@ -1,48 +1,110 @@
-import React from 'react';
+import React, { useState } from "react";
+import { HiMiniChevronRight } from "react-icons/hi2";
 
 const VSOServices = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
+
   return (
-    <div className="max-w-5xl mx-auto px-6 py-10">
-      <h1 className="text-3xl font-bold text-blue-900 mb-4">VSO Services</h1>
-      <p className="text-lg mb-6">
-        Voice Search Optimization enables your pages to appear in voice search results. It improves visibility
-        and boosts your recommendation rate, helping more users discover your site or app.
-        NK Tech, rated as the <strong>Best VSO Agency in Noida Delhi NCR</strong>, offers top-notch voice
-        search optimization as part of our digital marketing services.
-      </p>
+    <div className="w-full bg-white overflow-x-hidden">
+      {/* ===== Intro Section ===== */}
+      <section className="max-w-6xl mx-auto px-4 py-5">
+        <h1 className="text-3xl md:text-4xl font-bold text-[#294A63] mb-6 text-center">
+          Why invest in voice search optimization?
+        </h1>
+        <p className="text-gray-700 text-left md:text-justify leading-relaxed">
+          It is considered an effective tool to increase your market and customers. Recent
+          stats show that more than 50% of people use voice search tools for searching
+          businesses and business-related queries. Hence, to reach out to such people it is
+          necessary to invest in voice search optimization. It is also necessary to ensure
+          that the service purchased is quality service and economical as well. For availing
+          such benefits you can invest in Bizwoke for the services. As they are reliable,
+          economical, and are known to provide customers satisfaction through their quality
+          services.
+        </p>
+      </section>
 
-      <h2 className="text-2xl font-semibold text-gray-800 mb-2">Why Invest in Voice Search Optimization?</h2>
-      <p className="mb-6">
-        Over 50% of people use voice assistants to search for businesses and related services. If you're
-        not optimizing for voice search, you're missing out on a significant customer base. Choosing a
-        reliable, cost-effective service provider like NK Tech ensures that you get high-quality service
-        that delivers results.
-      </p>
+      <section className="bg-white py-12">
+        <div className="max-w-7xl mx-auto px-4">
+          <h3 className="text-lg text-center text-[#294A63] md:text-4xl font-bold mb-6">
+            VSO Services
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div className="space-y-4 text-gray-700 text-center md:text-left">
+              <p className="text-justify">
+                Voice search optimization enables your pages to appear in the voice search.
+                It is a process of optimizing your pages in such a manner that helps the maximum
+                number of people to visit your site or app by improving the visibility as well as
+                the recommendation rate in the voice search results. It is also essential to approach
+                an effective service provider if you are willing to invest in this service. Bizwoke
+                is known to provide the best digital marketing services and can help you with voice
+                search optimization as well. Call Bizwoke, Rated as the Best VSO Agency in Noida Delhi NCR
+              </p>
+            </div>
+            <div className="flex justify-center">
+              <img
+                src="/assets/vso-services/VSO-Services_575x385px_V01.png"
+                alt="vso services"
+                className="w-full max-w-xs md:max-w-xs h-48 object-contain rounded-lg"/>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <h2 className="text-2xl font-semibold text-gray-800 mb-2">Benefits of Voice Search Optimization</h2>
-      <ul className="list-disc pl-5 space-y-2 mb-6">
-        <li>
-          <strong>Improved Rankings:</strong> Voice search algorithms prioritize responses that closely
-          match user queries. Our VSO services help your pages align with those queries.
-        </li>
-        <li>
-          <strong>Enhanced Trust:</strong> Appearing in voice search increases brand trust and credibility,
-          as users tend to trust what’s suggested by their devices.
-        </li>
-      </ul>
+      <section className="bg-gray-50 py-12">
+        <div className="max-w-7xl mx-auto px-4">
+          <h3 className="text-lg text-center text-[#294A63] md:text-4xl font-bold mb-6">
+            Benefits one can gain
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div className="flex justify-center">
+              <img
+                src="/assets/vso-services/Benefits-one-can-gain_575x385px.png"
+                alt="Benefits-one-can-give"
+                className="w-full max-w-xs md:max-w-xs h-48 object-contain rounded-lg"
+              />
+            </div>
+            <div className="space-y-4 text-gray-700 text-center md:text-left">
+              <p className="text-justify">
+                Improves voice search ranking
+                The algorithm used in voice search is designed in a manner
+                that it gives only those answers that are similar to the question.
+                Hence voice search optimization can help you gain more ranking.<br />
+                Helps in developing customer’s trust
+                People are more likely to trust what the screen shows to them.
+                Hence when your page appears through voice search people are more likely to trust your business.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <h2 className="text-2xl font-semibold text-gray-800 mb-2">Why Choose NK Tech?</h2>
-      <p className="mb-6">
-        Known for our SEO expertise, NK Tech has developed a specialized, research-backed process for
-        optimizing voice search. Our services are not only reliable and effective but also economically
-        priced. We are committed to customer satisfaction and helping businesses grow without straining
-        their budgets.
-      </p>
+      <section className="bg-white py-12">
+        <div className="max-w-7xl mx-auto px-4">
+          <h3 className="text-lg text-center text-[#294A63] md:text-4xl font-bold mb-6">
+            Why choose Bizwoke
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div className="space-y-4 text-gray-700 text-center md:text-left">
+              <p className="text-justify">
+                Known for its SEO services, We have done extensive research on VSO and developed a
+                tested process to rank your website top at search engines through our VSO services.<br /> <br />
 
-      <p className="font-semibold text-blue-700">
-        Contact NK Tech today to boost your presence through VSO and stand out in the competitive
-        digital space.
-      </p>
+                the company is known to be the best digital marketing service provider. They aim to provide quality services
+                at an economical price which makes them desirable to many customers. They are reviewed as best at what they do
+                by many customers which makes them ideal for providing services. It is a great company that helps your business
+                grow without being heavy on your pocket.
+              </p>
+            </div>
+            <div className="flex justify-center">
+              <img
+                src="/assets/vso-services/Why-choose-Bizwoke_575x367px.png"
+                alt="why choose Bizwoke"
+                className="w-full max-w-xs md:max-w-xs h-48 object-contain rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
