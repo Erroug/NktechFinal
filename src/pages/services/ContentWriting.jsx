@@ -12,7 +12,7 @@ const contentWriting = () => {
         <div className="flex-grow border-t border-gray-400"></div>
       </div>
 
-      <p className="text-center text-gray-600 max-w-3xl mx-auto mb-12 px-2">
+      <p className="text-center text-justify text-gray-600 max-w-3xl mx-auto mb-12 px-2">
         Relevant content is the Great medium of sharing our Lifestyle, Hobbies,
         Product and Services details with our Friends, Colleagues or to target
         audience. Producing right content to attract and educate right audience
@@ -39,10 +39,13 @@ const contentWriting = () => {
                 />
               </div>
               <h3 className="text-orange-500 text-xl font-bold mb-3">Technical</h3>
-              <p className="text-white leading-6">
-                High-quality technical content writing. NKtech ensures to put the
-                best words forward to explain the technical information about your
-                Products, Services or Software...
+              <p className="text-white text-justify leading-6">
+              High-quality technical content writing. Bizwoke ensures to put the best 
+              words forward to explain the technical information about your Products, 
+              Services or Software. Whether you need to explain some technical features
+               or guidance, we will help you to explain those terms in the best possible
+                easier manner. We also have a bunch of technical content writers, who really 
+                have a piece of sharp knowledge about the technical zone.
               </p>
             </div>
 
@@ -56,10 +59,12 @@ const contentWriting = () => {
                 />
               </div>
               <h3 className="text-orange-500 text-xl font-bold mb-3">Hobby</h3>
-              <p className="text-white leading-6">
-                Blogging, telling a mass audience about fashion, Lifestyle,
-                Books, Travel or maybe some delicious recipes via various social
-                platforms...
+              <p className="text-white text-justify leading-6">
+              Blogging, telling a mass audience about fashion, Lifestyle, Books, 
+              Travel or maybe some delicious recipes via various social platforms 
+              or some written material, is something on fire nowadays. Here at NKtech,
+               we appreciate your Hobby, and really would like to put the best words 
+               combination forward to tell about. So if you have such need, we are a call away.
               </p>
             </div>
 
@@ -73,10 +78,12 @@ const contentWriting = () => {
                 />
               </div>
               <h3 className="text-orange-500 text-xl font-bold mb-3">Normal</h3>
-              <p className="text-white leading-6">
-                Bizwoke ensures to provide a complete package to the Clients. If
-                you have some general requirement on any topic, we will feel
-                great to serve you with our Content Writing Team...
+              <p className="text-white text-justify leading-6">
+              Bizwoke ensures to provide a complete package to the Clients. 
+              If you have some general requirement on any of the topic, 
+              will feel great to serve you with our really great Content 
+              Writing Team. Also, we really would like to convey the 
+              information to your targeted Audience in your way.
               </p>
             </div>
           </div>

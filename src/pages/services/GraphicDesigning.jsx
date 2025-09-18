@@ -8,12 +8,12 @@ const GraphicDesigning = () => {
         <div className="absolute top-1/2 left-0 w-full border-t border-gray-400 z-0"></div>
       </h2>
 
-      <p className="text-center text-gray-600 max-w-3xl mx-auto mb-12">
+      <p className="text-center text-justify text-gray-600 max-w-3xl mx-auto mb-12">
         Innovativeness is the fundamental principle of visual correspondence. ‘How you state’ is
         as a lot of significant as ‘what you state’ to offer your expression to champion. Normally,
         this aptitude isn’t some tea for everything except it must be created by hatching the
         thoughts and sustaining them enthusiastically to convey the ideal effect.
-        <br />
+        <br /><br/>
         Regardless of whether you need best logo plan or best visiting card structures or
         stationery plan or standees or handouts or site/online networking illustrations,
         we give all sort of Graphic structure administrations. Get in touch with us for any of
@@ -77,7 +77,7 @@ const GraphicDesigning = () => {
               Logo
               </h3>
               <p className="text-white space-y-2 mb-5">
-              Here at Nktech, you can easily get a customized and unique logo 
+              Here at Bizwoke, you can easily get a customized and unique logo 
               design for your business. Our team of designers has already worked
                with a lot of brands and always ready to serve you our work which you love the most.
               </p>

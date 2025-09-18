@@ -53,7 +53,7 @@ const PPCServices = () => {
     PPC Management Service and solutions. We are known for professional
     services in
     <span className="text-red-500"> SEO Company in Noida</span>
-    and Website development. Digital Marketers working at Nktech are capable
+    and Website development. Digital Marketers working at Bizwoke are capable
     of delivering and executing the best possible ROI for your business.
     Our PPC Managers possess expertise to improve your existing PPC,
     ensuring a great Digital marketing campaign or business application.

@@ -18,7 +18,7 @@ const WebDeveloping = () => {
                   className="w-2/3 max-w-[150px] h-auto"
                 />
               </div>
-              <p className="text-white leading-6">
+              <p className="text-white text-justify leading-6">
                 PHP (recursive acronym for PHP: Hypertext Preprocessor)
                 is a widely-used open source general-purpose scripting
                 language that is especially suited for web development and can be embedded into HTML.
@@ -34,7 +34,7 @@ const WebDeveloping = () => {
                   className="w-2/3 max-w-[150px] h-auto"
                 />
               </div>
-              <p className="text-white leading-6">
+              <p className="text-white text-justify leading-6">
                 PrestaShop is a freemium, open source e-commerce solution. The software 
                 is published under the Open Software License. It is written in the PHP programming
                 language with support for the MySQL database management system.
@@ -50,7 +50,7 @@ const WebDeveloping = () => {
                   className="w-2/3 max-w-[150px] h-auto"
                 />
               </div>
-              <p className="text-white leading-6">
+              <p className="text-white text-justify leading-6">
                 The DOT NET Framework’s Base Class Library offers user interface,
                 database connectivity, data access, cryptography, web application
                 development, numeric algorithms, network communications etc.
@@ -66,7 +66,7 @@ const WebDeveloping = () => {
                   className="w-2/3 max-w-[150px] h-auto"
                 />
               </div>
-              <p className="text-white leading-6">
+              <p className="text-white text-justify leading-6">
                 Angular is a TypeScript-based open-source web application framework led by the Angular Team at 
                 Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS.
               </p>
@@ -81,7 +81,7 @@ const WebDeveloping = () => {
                   className="w-2/3 max-w-[150px] h-auto"
                 />
               </div>
-              <p className="text-white leading-6">
+              <p className="text-white text-justify leading-6">
                 Shopify Inc. is a Canadian multinational e-commerce company headquartered in Ottawa, Ontario. It is also the name of 
                 its proprietary e-commerce platform for online stores and retail point-of-sale systems.
               </p>
@@ -96,7 +96,7 @@ const WebDeveloping = () => {
                   className="w-2/3 max-w-[150px] h-auto"
                 />
               </div>
-              <p className="text-white leading-6">
+              <p className="text-white text-justify leading-6">
                 Magento is an open-source e-commerce platform written in PHP. The software
                 was originally developed by Varien, Inc, a US private company headquartered
                 in Culver City, California, with assistance from volunteers. Varien published 
@@ -113,7 +113,7 @@ const WebDeveloping = () => {
                   className="w-2/3 max-w-[150px] h-auto"
                 />
               </div>
-              <p className="text-white leading-6">
+              <p className="text-white text-justify leading-6">
                 Joomla is a free and open-source content management system for publishing web content, developed by 
                 Open Source Matters, Inc. It is built on a model–view–controller web application framework that can be used independently of the CMS.
               </p>
@@ -128,7 +128,7 @@ const WebDeveloping = () => {
                   className="w-2/3 max-w-[150px] h-auto"
                 />
               </div>
-              <p className="text-white leading-6">
+              <p className="text-white text-justify leading-6">
                 WordPress is a content management system based on PHP and MySQL that is usually used with the MySQL or MariaDB
                 database servers but can also use the SQLite database engine. Features include a plugin architecture and a template system.
               </p>

@@ -9,7 +9,7 @@ const MobileDeveloment = () => {
             <div className="absolute top-1/2 left-0 w-full border-t border-gray-400 z-0"></div>
           </h2>
     
-          <p className="text-center text-gray-600 max-w-3xl mx-auto mb-12">
+          <p className="text-center text-gray-600 max-w-3xl text-justify mx-auto mb-12">
           Two significant and related patterns previously significantly affecting everyday tasks
            at a quickly developing number of organizations. Regardless of whether you’re a person with
             an unmistakable application thought, or an endeavor intending to arrive at your intended interest
@@ -35,7 +35,7 @@ const MobileDeveloment = () => {
                   <h3 className="text-orange-500 text-xl font-bold mb-3">
                     E-Commerce
                   </h3>
-                  <p className="text-white leading-6">
+                  <p className="text-white text-justify leading-6">
                   All we want is a handy solution, an application that supports mobile. You can 
                   access it anytime anywhere. All we want you to come up with a business idea and 
                   our team of experts will convert that into a handy mobile application. Shopping 
@@ -56,7 +56,7 @@ const MobileDeveloment = () => {
                   <h3 className="text-orange-500 text-xl font-bold mb-3">
                     Basic
                   </h3>
-                  <p className="text-white leading-6">
+                  <p className="text-white text-justify 0leading-6">
                   Understanding the right need, at the right time, and targeting to the
                    right audience is the essence of successful Business. Question is, how to
                     communicate with your audience. Are offline promotional activities enough?

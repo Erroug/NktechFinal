@@ -30,10 +30,10 @@ export default function SEOservices() {
           Services.
           <br /><br />
           SEO services are the backbone of your Digital Marketing plan. Everyone wants to rank
-          top at Google or other search engines. At NKTech we delivered the best white hat SEO
+          top at Google or other search engines. At Bizwoke we delivered the best white hat SEO
           services to our clients around the world. Our clients websites are ranking at the top.
           The reviews of our clients like “Best SEO services..” “We are Getting most out of my
-          website after SEO services from NKTech…” such motivated words make team NKTech proud.
+          website after SEO services from Bizwoke…” such motivated words make team Bizwoke proud.
           But still, we are working hard and inventing new ideas and methodology to offer Best
           SEO services to our clients. Our team core objective is to give the best ROI to our
           clients on their investment in SEO services. We are based in Noida and providing SEO

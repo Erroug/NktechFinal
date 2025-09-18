@@ -17,7 +17,7 @@ const GurugramContact = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10">
         <div>
           <p className="px-13 text-left text-lg text-center content-justify text-gray-600">
-            NKTech is a leading SEO and Digital Marketing Company in Noida,
+            Bizwoke is a leading SEO and Digital Marketing Company in Noida,
             India. We also serve as a renowned SEO and Website Designing Company
             in Ghaziabad, Noida, and Delhi. Since our inception in 2012, we have
             consistently delivered exceptional services, helping businesses grow

@@ -90,7 +90,7 @@ const NoidaContact = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10">
         <div>
           <p className="text-gray-600 text-lg mb-5">
-            NKTech is a leading SEO and Digital Marketing Company in Noida,
+            Bizwoke is a leading SEO and Digital Marketing Company in Noida,
             India. We also serve as a renowned SEO and Website Designing Company
             in Ghaziabad, Noida, and Delhi. Since our inception in 2012, we have
             consistently delivered exceptional services, helping businesses grow
@@ -229,7 +229,7 @@ const NoidaContact = () => {
           {/* Government Projects */}
           <div
             className="bg-white rounded-lg p-6 text-center transition"
-            style={{ boxShadow: "0 0 30px rgba(0, 0, 0, 0.3)" }}
+            style={{ boxShadow: "0 0 30px rgba(0, 0, 0, 0.3)" }}  
           >
             <h3 className="text-xl font-semibold text-[#294A63] mb-3 relative">
               <span className="px-2 bg-white relative z-10">
