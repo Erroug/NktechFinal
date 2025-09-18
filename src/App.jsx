@@ -41,12 +41,17 @@ import NoidaContact from "./pages/contacts/NoidaContact.jsx";
 import GurugramContact from "./pages/contacts/GurugramContact.jsx";
 import AustraliaContact from "./pages/contacts/AustraliaContacts.jsx";
 
-import Cart from "./pages/Cart.jsx"
+import Cart from "./pages/Cart.jsx";
+
+// ✅ import the ScrollToTop helper
+import ScrollToTop from "./components/ScrollToTop.jsx";
 
 function App() {
   return (
     <>
       <Navbar />
+      <ScrollToTop />   {/* ✅ added here */}
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -98,4 +103,3 @@ function App() {
 }
 
 export default App;
-  
