@@ -77,7 +77,18 @@ export default function Navbar() {
           WebkitOverflowScrolling: "touch",
         }}
       >
-        <ul className="flex flex-col gap-4 px-4 py-4 text-gray-700 text-sm font-medium w-full">
+        {/* 🔹 Close button inside menu */}
+        <div className="flex justify-end px-4 pt-4">
+          <button
+            onClick={() => setMobileOpen(false)}
+            aria-label="Close menu"
+            className="text-gray-700 hover:text-red-500 transition"
+          >
+            <X size={28} />
+          </button>
+        </div>
+
+        <ul className="flex flex-col gap-4 px-4 pb-4 text-gray-700 text-sm font-medium w-full">
           {menuItems.map((item, index) => (
             <MenuItems
               key={index}
@@ -88,6 +99,7 @@ export default function Navbar() {
               onClick={() => setMobileOpen(false)}
             />
           ))}
+
           <li>
             <Link
               to="/cart"
