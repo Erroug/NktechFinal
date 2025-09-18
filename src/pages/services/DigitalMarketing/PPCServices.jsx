@@ -35,35 +35,47 @@ const PPCServices = () => {
   return (
     <div className="w-full bg-white overflow-x-hidden">
       {/* ===== Intro Section ===== */}
-      <section className="max-w-6xl mx-auto px-4 py-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-[#294A63] mb-6 text-center">
-          PPC Services
-        </h1>
-        <p className="text-gray-700 text-justify md:text-left leading-relaxed md:leading-loose">
-          Searching for PPC Management Services or Website development company
-          in Noida, Ghaziabad or Greater Noida. We offer Best PPC Management
-          Services in Noida at very competitive price.
-          <br /><br />
-          Among a large number of Digital Marketing Companies operating in
-          India, NK Tech holds a respectable position. We offer a wide range of
-          PPC Management Service and solutions. We are known for professional
-          services in SEO Company in Noida and Website development. Digital
-          Marketers working at Nktech are capable of delivering and executing
-          the best possible ROI for your business. Our PPC Managers possess
-          expertise to improve your existing PPC, and thus ensuring a great
-          Digital marketing campaign or business application.
-          <br /><br />
-          We have India’s best digital marketing team in perfect combination
-          with the most comprehensive SEO managers process in the industry. This
-          innovative Digital Marketing process makes A-One Innovation Noida’s
-          PPC Management company which is way ahead of the rest.
-          <br /><br />
-          Our company has been offering its Digital Marketing for more than 8
-          years to clients from all over the world. We make sure that all our
-          clients are 100% satisfied with our Digital Marketing with the best
-          quality solutions and excellent services.
-        </p>
-      </section>
+<section className="max-w-6xl mx-auto px-4 py-12">
+  <h1 className="text-3xl md:text-4xl font-bold text-[#294A63] mb-6 text-center">
+    PPC Services
+  </h1>
+
+  <p className="text-gray-700 text-justify leading-relaxed md:leading-loose">
+    Searching for PPC Management Services or
+    <span className="text-red-500"> Website development company in Noida</span>,
+    Ghaziabad or Greater Noida. We offer Best PPC Management
+    Services in Noida at very competitive price.
+  </p>
+
+  <p className="text-gray-700 text-justify leading-relaxed md:leading-loose">
+    Among a large number of Digital Marketing Companies operating in
+    India, NK Tech holds a respectable position. We offer a wide range of
+    PPC Management Service and solutions. We are known for professional
+    services in
+    <span className="text-red-500"> SEO Company in Noida</span>
+    and Website development. Digital Marketers working at Nktech are capable
+    of delivering and executing the best possible ROI for your business.
+    Our PPC Managers possess expertise to improve your existing PPC,
+    ensuring a great Digital marketing campaign or business application.
+  </p>
+
+  <p className="text-gray-700 text-justify leading-relaxed md:leading-loose">
+    We have
+    <span className="text-red-500"> India’s best digital marketing team</span>
+    in perfect combination with the most comprehensive SEO managers
+    process in the industry. This innovative Digital Marketing process
+    makes A-One Innovation Noida’s PPC Management company which is way
+    ahead of the rest.
+  </p>
+
+  <p className="text-gray-700 text-justify leading-relaxed md:leading-loose">
+    Our company has been offering its Digital Marketing for more than 8
+    years to clients from all over the world. We make sure that all our
+    clients are 100% satisfied with our Digital Marketing with the best
+    quality solutions and excellent services.
+  </p>
+</section>
+
 
       {/* ===== Section 1: PPC Services ===== */}
       <section className="bg-white py-12">
@@ -120,7 +132,9 @@ const PPCServices = () => {
             </div>
             <div className="space-y-4 text-gray-700 text-center md:text-left">
               <p>
-                This is for customers who do not necessarily want to close their PPC providers but are not aware of the flaws in their current campaigns and PPC management services. Our best PPC experts will comb through your account and give you the same advice that we eat in your account.
+                This is for customers who do not necessarily want to close their PPC providers 
+                but are not aware of the flaws in their current campaigns and PPC management services. 
+                Our best PPC experts will comb through your account and give you the same advice that we eat in your account.
               </p>
             </div>
           </div>

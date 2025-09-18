@@ -15,7 +15,7 @@ const SMMServices = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-12">
         <div className="flex justify-center">
           <img
-            src="/assets/seo-services/.jpeg"
+            src="/assets/smm-services/social-media.jpg"
             alt="Introduction to social media"
             className="h-auto w-full max-w-lg rounded-lg shadow-md"
           />
@@ -37,22 +37,46 @@ const SMMServices = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-12">
         <p className="text-gray-700 leading-relaxed text-justify">
-        The next step is to find out what you customers are talking about. We simply call this ‘listening’.
-        This process is about delving into the various social networks and understanding what customers are saying about 
-        your product, your industry and your service.<br/><br/>
+          The next step is to find out what you customers are talking about. We simply call this ‘listening’.
+          This process is about delving into the various social networks and understanding what customers are saying about
+          your product, your industry and your service.<br /><br />
 
-        We take the most important phrases and topics in your business and create a report to help you divulge and understand this information.<br/><br/>
+          We take the most important phrases and topics in your business and create a report to help you divulge and understand this information.<br /><br />
 
-        The next step is to start to ‘engage’ with your audience. We will help you explore the right way to respond through social channels whether you are solving a complaint or thanking your customer for a compliment.
+          The next step is to start to ‘engage’ with your audience. We will help you explore the right way to respond through social channels whether you are solving a complaint or thanking your customer for a compliment.
         </p>
         <div className="flex justify-center">
           <img
-            src="/assets/seo-services/.png"
+            src="/assets/smm-services/SocialEngagementCycle.jpg"
             alt="Listening and Engagement"
             className="h-auto w-full max-w-lg rounded-lg shadow-md"
           />
         </div>
       </div>
+
+
+      {/* ===== Social Media Advertising ===== */}
+      <SectionTitle title="Social Media Advertising" />
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-12">
+        <div className="flex justify-center">
+          <img
+            src="/assets/smm-services/Social-Media-Advertising-Software.jpg"
+            alt="Introduction Media Advertising"
+            className="h-auto w-full max-w-lg rounded-lg shadow-md"
+          />
+        </div>
+
+        {/* Paragraph 3rd */}
+        <p className="text-gray-700 leading-relaxed text-justify">
+
+          Facebook, Twitter and LinkedIn all offer advertising opportunities. 
+          Here at Fat Media we can talk you through the options available across 
+          these platforms and discuss how perhaps a location based geo-targeting 
+          strategy or a demographic selection approach could suit your business..
+        </p>
+      </div>
+
 
       {/* ===== Pricing Section ===== */}
       <section className="mb-8">
@@ -61,6 +85,8 @@ const SMMServices = () => {
           ₹7,500/- per month per platform + Third party charges as applicable.
         </p>
       </section>
+
+
 
       {/* ===== FAQ Section ===== */}
       <section>

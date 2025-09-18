@@ -17,7 +17,7 @@ const ORMServices = () => {
       <div className="relative mb-8 text-center py-10 w-full">
         <div className="absolute left-0 top-1/2 w-full border-t border-dashed border-gray-400"></div>
         <h2 className="relative inline-block bg-gray-50 px-4 text-3xl font-bold text-[#294A63]">
-          SEO Services
+          ORM Services
         </h2>
       </div>
 

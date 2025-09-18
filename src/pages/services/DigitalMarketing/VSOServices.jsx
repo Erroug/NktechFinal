@@ -37,14 +37,19 @@ const VSOServices = () => {
                 the recommendation rate in the voice search results. It is also essential to approach
                 an effective service provider if you are willing to invest in this service. Bizwoke
                 is known to provide the best digital marketing services and can help you with voice
-                search optimization as well. Call Bizwoke, Rated as the Best VSO Agency in Noida Delhi NCR
+                search optimization as well. Call Bizwoke, Rated as <a
+                  href="#"
+                  className="text-red-500 underline hover:text-red-700"
+                >
+                  the Best VSO Agency in Noida Delhi NCR
+                </a>
               </p>
             </div>
             <div className="flex justify-center">
               <img
                 src="/assets/vso-services/VSO-Services_575x385px_V01.png"
                 alt="vso services"
-                className="w-full max-w-xs md:max-w-xs h-48 object-contain rounded-lg"/>
+                className="w-full max-w-xs md:max-w-xs h-48 object-contain rounded-lg" />
             </div>
           </div>
         </div>

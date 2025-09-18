@@ -133,7 +133,7 @@ export default function SEOservices() {
 
         {/* ===== Government Projects ===== */}
         <div className="mt-10">
-          <h3 className="mb-4 font-semibold underline">GOVERNMENT PROJECTS:</h3>
+          <h3 className="mb-4 font-semibold underline">Popular Searches:</h3>
           <p>
             <a href="https://bizwoke.com" target="_blank" rel="noopener noreferrer"
               className="text-blue-600 hover:underline">
