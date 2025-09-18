@@ -15,7 +15,7 @@ export default function Navbar() {
 
   const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
 
-  // ✅ Close the mobile menu when navigating
+  // Close mobile menu when navigating
   useEffect(() => {
     setMobileOpen(false);
   }, [location.pathname]);
@@ -24,26 +24,31 @@ export default function Navbar() {
     <header className="shadow-sm sticky top-0 z-50 bg-white">
       <Topbar />
 
-      {/* ===== Top Nav Bar ===== */}
-      <nav className="container mx-auto flex items-center justify-between py-3 px-4">
+      {/* ===== Nav Bar ===== */}
+      <nav className="w-full flex flex-wrap items-center justify-between py-3 px-4 max-w-full mx-auto">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
           <img src={bizwokeLogo} alt="Bizwoke" className="h-12 w-auto" />
         </Link>
 
         {/* ===== Desktop Menu ===== */}
-        <ul className="hidden md:flex gap-6 text-gray-700 text-sm font-medium items-center">
+        <ul className="hidden md:flex flex-wrap gap-6 text-gray-700 text-sm font-medium items-center">
           {menuItems.map((item, index) => (
-            <MenuItems key={index} item={item} depthLevel={0} />
+            <MenuItems
+              key={index}
+              item={item}
+              depthLevel={0}
+              className="whitespace-normal break-words"
+            />
           ))}
-          <li className="relative">
-            <Link to="/cart">
+          <li className="ml-2 relative">
+            <Link to="/cart" className="flex items-center gap-2">
               <ShoppingCart
                 size={22}
                 className="cursor-pointer hover:text-[#fbae57] transition"
               />
               {cartCount > 0 && (
-                <span className="absolute -top-2 -right-2 bg-green-600 text-white text-xs px-2 py-0.5 rounded-full">
+                <span className="bg-green-600 text-white text-xs px-2 py-0.5 rounded-full">
                   {cartCount}
                 </span>
               )}
@@ -51,7 +56,7 @@ export default function Navbar() {
           </li>
         </ul>
 
-        {/* ===== Mobile Toggle Button ===== */}
+        {/* ===== Mobile Menu Button ===== */}
         <button
           className="md:hidden flex items-center text-gray-700"
           onClick={() => setMobileOpen(!mobileOpen)}
@@ -65,10 +70,7 @@ export default function Navbar() {
       <div
         className={`md:hidden fixed top-[64px] left-0 w-screen bg-white z-50
           transition-all duration-300
-          ${mobileOpen
-            ? "opacity-100 pointer-events-auto"
-            : "opacity-0 pointer-events-none"
-          }`}
+          ${mobileOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
         style={{
           maxHeight: mobileOpen ? "calc(100vh - 64px)" : "0",
           overflowY: mobileOpen ? "auto" : "hidden",
@@ -82,13 +84,14 @@ export default function Navbar() {
               item={item}
               depthLevel={0}
               mobile
+              className="break-words w-full"
               onClick={() => setMobileOpen(false)}
             />
           ))}
           <li>
             <Link
               to="/cart"
-              className="flex items-center gap-2"
+              className="flex items-center gap-2 w-full"
               onClick={() => setMobileOpen(false)}
             >
               <ShoppingCart
