@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { menuItems } from "../data/menuItem.js";
 import MenuItems from "./MenuItems.jsx";
@@ -13,25 +13,25 @@ export default function Navbar() {
   const { cart } = useContext(CartContext);
   const location = useLocation();
 
-  // ✅ Close mobile menu whenever route changes (on page navigation / reload)
-  React.useEffect(() => {
+  const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+
+  // ✅ Close the mobile menu when navigating
+  useEffect(() => {
     setMobileOpen(false);
   }, [location.pathname]);
-
-  const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
 
   return (
     <header className="shadow-sm sticky top-0 z-50 bg-white">
       <Topbar />
 
-      {/* Main Navbar */}
+      {/* ===== Top Nav Bar ===== */}
       <nav className="container mx-auto flex items-center justify-between py-3 px-4">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
           <img src={bizwokeLogo} alt="Bizwoke" className="h-12 w-auto" />
         </Link>
 
-        {/* Desktop Menu */}
+        {/* ===== Desktop Menu ===== */}
         <ul className="hidden md:flex gap-6 text-gray-700 text-sm font-medium items-center">
           {menuItems.map((item, index) => (
             <MenuItems key={index} item={item} depthLevel={0} />
@@ -51,7 +51,7 @@ export default function Navbar() {
           </li>
         </ul>
 
-        {/* Mobile Menu Toggle Button */}
+        {/* ===== Mobile Toggle Button ===== */}
         <button
           className="md:hidden flex items-center text-gray-700"
           onClick={() => setMobileOpen(!mobileOpen)}
@@ -61,16 +61,21 @@ export default function Navbar() {
         </button>
       </nav>
 
-      {/* ✅ Mobile Dropdown Menu - Fullscreen & Scrollable */}
+      {/* ===== Mobile Dropdown ===== */}
       <div
-        className={`md:hidden fixed inset-0 top-[64px] bg-white z-50
+        className={`md:hidden fixed top-[64px] left-0 w-screen bg-white z-50
           transition-all duration-300
           ${mobileOpen
-            ? "opacity-100 pointer-events-auto overflow-y-auto"
+            ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
           }`}
+        style={{
+          maxHeight: mobileOpen ? "calc(100vh - 64px)" : "0",
+          overflowY: mobileOpen ? "auto" : "hidden",
+          WebkitOverflowScrolling: "touch",
+        }}
       >
-        <ul className="flex flex-col gap-4 px-4 py-4 text-gray-700 text-sm font-medium">
+        <ul className="flex flex-col gap-4 px-4 py-4 text-gray-700 text-sm font-medium w-full">
           {menuItems.map((item, index) => (
             <MenuItems
               key={index}
