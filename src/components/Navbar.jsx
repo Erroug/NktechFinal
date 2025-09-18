@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { menuItems } from "../data/menuItem.js";
 import MenuItems from "./MenuItems.jsx";
@@ -11,18 +11,22 @@ const bizwokeLogo = "/assets/Bizwoke.jpg";
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const { cart } = useContext(CartContext);
-  const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
-
-  // ✅ Close dropdown whenever route changes
   const location = useLocation();
-  useEffect(() => {
+
+  // ✅ Close mobile menu whenever route changes (on page navigation / reload)
+  React.useEffect(() => {
     setMobileOpen(false);
   }, [location.pathname]);
+
+  const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
 
   return (
     <header className="shadow-sm sticky top-0 z-50 bg-white">
       <Topbar />
+
+      {/* Main Navbar */}
       <nav className="container mx-auto flex items-center justify-between py-3 px-4">
+        {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
           <img src={bizwokeLogo} alt="Bizwoke" className="h-12 w-auto" />
         </Link>
@@ -47,7 +51,7 @@ export default function Navbar() {
           </li>
         </ul>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Toggle Button */}
         <button
           className="md:hidden flex items-center text-gray-700"
           onClick={() => setMobileOpen(!mobileOpen)}
@@ -57,13 +61,13 @@ export default function Navbar() {
         </button>
       </nav>
 
-      {/* Mobile Dropdown Menu */}
+      {/* ✅ Mobile Dropdown Menu - Fullscreen & Scrollable */}
       <div
-        className={`md:hidden bg-white border-t border-gray-200 shadow-lg
+        className={`md:hidden fixed inset-0 top-[64px] bg-white z-50
           transition-all duration-300
           ${mobileOpen
-            ? "max-h-[90vh] opacity-100 overflow-y-auto"
-            : "max-h-0 opacity-0 overflow-hidden"
+            ? "opacity-100 pointer-events-auto overflow-y-auto"
+            : "opacity-0 pointer-events-none"
           }`}
       >
         <ul className="flex flex-col gap-4 px-4 py-4 text-gray-700 text-sm font-medium">
