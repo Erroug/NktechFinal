@@ -3,12 +3,12 @@ import React from 'react'
 const GraphicDesigning = () => {
   return (
     <div className="flex flex-col items-center justify-center px-4">
-      <h2 className="text-center text-[#294A63] text-3xl font-semibold mb-6 relative w-full">
+      <h2 className="text-center text-[#294A63] text-4xl font-bold mb-6 relative w-full">
         <span className="px-4 bg-white relative z-10">Our Big Step</span>
-        <div className="absolute top-1/2 left-0 w-full border-t border-gray-400 z-0"></div>
+        <div className="absolute top-1/2 left-0 w-full border-t border-dashed border-[#294A63] z-0"></div>
       </h2>
 
-      <p className="text-center text-justify text-gray-600 max-w-3xl mx-auto mb-12">
+      <p className="text-center text-justify text-gray-600 max-w-auto mx-auto mb-12">
         Innovativeness is the fundamental principle of visual correspondence. ‘How you state’ is
         as a lot of significant as ‘what you state’ to offer your expression to champion. Normally,
         this aptitude isn’t some tea for everything except it must be created by hatching the
@@ -38,7 +38,7 @@ const GraphicDesigning = () => {
               <h3 className="text-orange-500 text-xl font-bold mb-3">
               Company Identity
               </h3>
-              <p className="text-white leading-6">
+              <p className="text-white text-justify leading-6">
               Create your own unique company identity design with our team.
                Whether you are looking for spectacular or some stunning flyers
                 design, our team of talented designers are always ready to fulfill
@@ -57,7 +57,7 @@ const GraphicDesigning = () => {
               <h3 className="text-orange-500 text-xl font-bold mb-3">
               Social Post Design
               </h3>
-              <p className="text-white leading-6">
+              <p className="text-white text-justify leading-6">
               Social media posts design is the need of every business and 
               this work demands top-notch creativity and this is the quality 
               which makes our team different and designs the best posts which 
@@ -76,7 +76,7 @@ const GraphicDesigning = () => {
               <h3 className="text-orange-500 text-xl font-bold mb-3">
               Logo
               </h3>
-              <p className="text-white space-y-2 mb-5">
+              <p className="text-white text-justify space-y-2 mb-5">
               Here at Bizwoke, you can easily get a customized and unique logo 
               design for your business. Our team of designers has already worked
                with a lot of brands and always ready to serve you our work which you love the most.

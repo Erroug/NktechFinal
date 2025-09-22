@@ -5,13 +5,15 @@ const NoidaContact = () => {
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
       {/* Heading */}
-      <h2 className="text-center text-[#294A63] text-2xl md:text-3xl font-semibold mb-2">
-        Our Journey
-      </h2>
-      <div className="w-24 mx-auto border-b border-gray-400 mb-6"></div>
+        <div className="relative mb-8 text-center">
+          <div className="absolute left-0 top-1/2 w-full border-t border-dashed border-[#294A63]"></div>
+          <h2 className="relative inline-block bg-gray-50 px-4 text-4xl font-bold text-[#294A63]">
+            Our Journey
+          </h2>
+        </div>
 
       {/* Description */}
-      <p className="pt-7 text-center text-gray-600 mb-12">
+      <p className="pt-7 text-center  text-xl text-gray-600 mb-12">
         Starting as a Digital Marketing Agency, we have expanded into Website
         Development, Software Development, and other IT solutions. Our
         dedication to our core values has fueled our growth over the past
@@ -84,12 +86,15 @@ const NoidaContact = () => {
       </div>
 
       {/* Our Services */}
-      <h2 className="text-center text-[#294A63] pt-8 text-3xl md:text-4xl font-semibold mb-4">
-        Our Services
-      </h2>
+      <div className="relative mb-8 text-center">
+          <div className="absolute left-0 top-1/2 w-full border-t border-dashed border-[#294A63]"></div>
+          <h2 className="relative inline-block bg-gray-50 px-4 text-4xl font-bold text-[#294A63]">
+            Our Services
+          </h2>
+        </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10">
         <div>
-          <p className="text-gray-600 text-lg mb-5">
+          <p className="text-gray-600 text-xl text-justify mb-5">
             Bizwoke is a leading SEO and Digital Marketing Company in Noida,
             India. We also serve as a renowned SEO and Website Designing Company
             in Ghaziabad, Noida, and Delhi. Since our inception in 2012, we have
@@ -97,18 +102,18 @@ const NoidaContact = () => {
             by leveraging our expertise in SEO, PPC, SMO, and content writing.
           </p>
 
-          <p className="text-gray-600 text-lg mb-5">
+          <p className="text-gray-600 text-xl text-justify mb-5">
             With over 550 satisfied customers worldwide and 1000+ successful
             projects delivered, we are trusted by clients from diverse sectors,
             including Hotels, Hospitals, FMCG companies, Doctors, Clinics,
             Schools, Colleges, and many more.
           </p>
 
-          <h3 className="text-xl font-bold text-[#294A63] pt-5 pb-5">
-            Our Journey
-          </h3>
+          <p className ="text-gray-600 text-xl">Our Journey
 
-          <p className="text-gray-600 text-lg">
+          </p><br/>
+
+          <p className="text-gray-600 text-xl">
             Started as a Digital Marketing Agency, we have expanded into Website
             Development, Software Development, and other IT solutions. Our
             dedication to our core values has fueled our growth over the past
@@ -140,10 +145,12 @@ const NoidaContact = () => {
 
       {/* Our Expertise */}
       <div className="mt-20">
-        <h2 className="text-center text-[#294A63] text-3xl font-semibold mb-10 relative">
-          <span className="px-4 bg-white relative z-10">Our Expertise</span>
-          <div className="absolute top-1/2 left-0 w-full border-t border-gray-400 z-0"></div>
-        </h2>
+      <div className="relative mb-8 text-center">
+          <div className="absolute left-0 top-1/2 w-full border-t border-dashed border-[#294A63]"></div>
+          <h2 className="relative inline-block bg-gray-50 px-4 text-4xl font-bold text-[#294A63]">
+            Our Expertise
+          </h2>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Left: Image */}
@@ -167,17 +174,20 @@ const NoidaContact = () => {
 
       {/* Our Big Step */}
       <div className="mt-20">
-        <h2 className="text-center text-[#294A63] text-3xl font-semibold mb-6 relative">
-          <span className="px-4 bg-white relative z-10">Our Big Step</span>
-          <div className="absolute top-1/2 left-0 w-full border-t border-gray-400 z-0"></div>
-        </h2>
+      <div className="relative mb-8 text-center">
+          <div className="absolute left-0 top-1/2 w-full border-t border-dashed border-[#294A63]"></div>
+          <h2 className="relative inline-block bg-gray-50 px-4 text-4xl font-bold text-[#294A63]">
+            Our Big Step
+          </h2>
+        </div>
 
-        <p className="text-center text-gray-600 max-w-3xl mx-auto mb-12">
-          We have developed a unique local ecosystem portal for cities, enabling
-          users to find local businesses, jobs, news, events, and much more. <br />
-          Currently live in 30 cities, we aim to expand to 500 cities in the
-          coming years.
-        </p>
+        <p className="text-left text-justify text-gray-600 max-w-xl mx-auto mb-12 text-xl">
+  We have developed a unique local ecosystem portal for cities, enabling
+  users to find local businesses, jobs, news, events, and much more. <br />
+  Currently live in 30 cities, we aim to expand to 500 cities in the
+  coming years.
+</p>
+
 
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -196,11 +206,11 @@ const NoidaContact = () => {
               className="bg-white rounded-lg p-6 text-center transition"
               style={{ boxShadow: "0 0 30px rgba(0,0,0,0.3)" }}
             >
-              <h3 className="text-xl font-semibold text-[#294A63] mb-3 relative">
+              <h3 className="text-4xl font-bold text-[#294A63] mb-3 relative">
                 <span className="px-2 bg-white relative z-10">{item.title}</span>
-                <div className="absolute top-1/2 left-0 w-full border-t border-gray-300 z-0"></div>
+                <div className="absolute top-1/2 left-0 w-full border-t border-dashed border-gray-600 z-0"></div>
               </h3>
-              <p className="text-gray-600 text-justify">{item.text}</p>
+              <p className="text-gray-600 text-xl text-justify">{item.text}</p>
             </div>
           ))}
 
@@ -209,13 +219,13 @@ const NoidaContact = () => {
             className="bg-white rounded-lg p-6 text-center transition"
             style={{ boxShadow: "0 0 30px rgba(0, 0, 0, 0.3)" }}
           >
-            <h3 className="text-xl font-semibold text-[#294A63] mb-3 relative">
+            <h3 className="text-4xl font-bold text-[#294A63] mb-3 relative">
               <span className="px-2 bg-white relative z-10">
                 Awards and Achievements
               </span>
-              <div className="absolute top-1/2 left-0 w-full border-t border-gray-300 z-0"></div>
+              <div className="absolute top-1/2 left-0 w-full border-t border-dashed border-gray-3=600 z-0"></div>
             </h3>
-            <div className="text-gray-600 text-left space-y-2">
+            <div className="text-gray-600 text-xl text-left space-y-2">
               <p><strong>• Winner of:</strong></p>
               <p>Best Digital Marketing Company in Delhi NCR (2015, 2016)</p>
               <p>Best Digital Marketing Company in Western UP (2016)</p>
@@ -231,13 +241,13 @@ const NoidaContact = () => {
             className="bg-white rounded-lg p-6 text-center transition"
             style={{ boxShadow: "0 0 30px rgba(0, 0, 0, 0.3)" }}  
           >
-            <h3 className="text-xl font-semibold text-[#294A63] mb-3 relative">
+            <h3 className="text-4xl font-bold text-[#294A63] mb-3 relative">
               <span className="px-2 bg-white relative z-10">
                 Government Projects
               </span>
-              <div className="absolute top-1/2 left-0 w-full border-t border-gray-300 z-0"></div>
+              <div className="absolute top-1/2 left-0 w-full border-t border-dashed border-gray-600 z-0"></div>
             </h3>
-            <div className="text-gray-600 text-left space-y-2">
+            <div className="text-gray-600 text-xl text-left space-y-2">
               <p>We proudly contribute to national initiatives and partnerships:</p>
               <p>• Worked with 15+ Municipal Corporations nationwide for the Swachh Bharat Mission.</p>
               <p>• Digital marketing for Ministry of Cooperation, Govt. of India.</p>
@@ -253,9 +263,12 @@ const NoidaContact = () => {
 
       {/* Google Map Section */}
       <div className="mt-20">
-        <h2 className="text-center text-[#294A63] text-3xl font-semibold mb-6">
-          Our Location
-        </h2>
+        <div className="relative mb-8 text-center">
+          <div className="absolute left-0 top-1/2 w-full border-t border-dashed border-[#294A63]"></div>
+          <h2 className="relative inline-block bg-gray-50 px-4 text-4xl font-bold text-[#294A63]">
+            Our Location
+          </h2>
+        </div>
         <div className="w-full h-[300px] sm:h-[400px] rounded-lg overflow-hidden shadow-lg">
           <iframe
             title="Our Location"

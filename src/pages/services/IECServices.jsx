@@ -4,15 +4,14 @@ import { motion } from "framer-motion";
 
 // 🔹 Reusable Section Heading Component
 const SectionHeading = ({ children }) => (
-  <div className="flex items-center justify-center gap-4 mb-12 px-2">
-    <div className="flex-1 border-t border-gray-400"></div> {/* Left line */}
-    <h2 className="text-2xl sm:text-3xl text-[#294A63] font-bold text-center leading-snug">
+  <div className="flex items-center justify-center gap-4 mb-12 w-full">
+    <div className="flex-1 border-t border-dashed border-[#294a63]"></div> {/* Left line */}
+    <h2 className="text-4xl text-[#294A63] font-bold text-center leading-snug px-2">
       {children}
     </h2>
-    <div className="flex-1 border-t border-gray-400"></div> {/* Right line */}
+    <div className="flex-1 border-t border-dashed border-[#294a63]"></div> {/* Right line */}
   </div>
 );
-
 
 // 🔹 Reusable Card Component
 const Card = ({ title, points, isBig }) => (
@@ -29,7 +28,7 @@ const Card = ({ title, points, isBig }) => (
       {title}
     </h3>
     <div className="flex justify-center">
-      <ul className="space-y-3 text-gray-700 text-base sm:text-lg leading-relaxed max-w-4xl w-full">
+      <ul className="space-y-3 text-gray-700 text-base sm:text-lg leading-relaxed w-full">
         {points.map((point, i) => (
           <li key={i} className="flex items-start gap-3">
             <CheckCircle className="text-green-600 w-[22px] h-[22px] flex-shrink-0 mt-[2px]" />
@@ -128,10 +127,11 @@ export default function IECServices() {
   ];
 
   return (
-    <div className="bg-white text-gray-800">
+    <div className="w-full bg-white text-gray-800">
+
       {/* Hero Section */}
-      <section className="relative bg-[#294A63] text-white text-center py-16 md:py-20 px-4 sm:px-6 overflow-hidden">
-        <div className="max-w-4xl mx-auto">
+      <section className="relative bg-[#294A63] text-white text-center py-16 md:py-20 px-4 sm:px-6 w-full">
+        <div className="w-full">
           <motion.h1
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -175,27 +175,19 @@ export default function IECServices() {
       </section>
 
       {/* About Section */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 text-center bg-gray-50">
-        <div className="max-w-3xl mx-auto">
-          <SectionHeading>About Our IEC Services</SectionHeading>
-          <p className="text-base sm:text-lg text-gray-700 leading-relaxed text-justify sm:text-center">
-            At Bizwoke Nova, we specialize in delivering Information, Education,
-            and Communication (IEC) services tailored for Urban Local Bodies
-            (ULBs). Our goal is to help municipalities inform citizens, engage
-            communities, and create lasting behavioral change in line with Swachh
-            Bharat Mission guidelines.
-            <br /><br />
-            By combining digital outreach and grassroots campaigns, we enable ULBs
-            to increase public participation, boost Swachh Survekshan scores, and
-            build cleaner, healthier cities.
-          </p>
-        </div>
+      <section className="py-12 sm:py-16 px-4 sm:px-6 w-full">
+        <SectionHeading>About Our IEC Services</SectionHeading>
+        <p className="text-xl text-gray-600 leading-relaxed text-justify w-full px-2 sm:px-6">
+          At Bizwoke Nova, we specialize in delivering Information, Education, and Communication (IEC) services tailored for Urban Local Bodies (ULBs). Our goal is to help municipalities inform citizens, engage communities, and create lasting behavioral change in line with Swachh Bharat Mission guidelines.
+          <br /><br />
+          By combining digital outreach and grassroots campaigns, we enable ULBs to increase public participation, boost Swachh Survekshan scores, and build cleaner, healthier cities.
+        </p>
       </section>
 
       {/* Our Offerings */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 max-w-6xl mx-auto">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 w-full">
         <SectionHeading>Our Offerings</SectionHeading>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
           {offerings.map((offering, i) => (
             <Card key={i} {...offering} />
           ))}
@@ -203,30 +195,17 @@ export default function IECServices() {
       </section>
 
       {/* IEC Features */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 max-w-6xl mx-auto">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 w-full">
         <SectionHeading>Our IEC Features for ULBs</SectionHeading>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
           {iecFeatures.map((feature, i) => (
             <Card key={i} title={feature.title} points={feature.points} />
           ))}
         </div>
       </section>
 
-      {/* Why Choose Us */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 text-center bg-gray-50">
-        <SectionHeading>Why Choose Bizwoke Nova for IEC?</SectionHeading>
-        <ul className="max-w-2xl mx-auto space-y-4 text-base sm:text-lg text-gray-700 text-left leading-relaxed">
-          {whyChooseUs.map((point, i) => (
-            <li key={i} className="flex items-start gap-3 font-medium">
-              <CheckCircle className="text-blue-600 w-[22px] h-[22px] flex-shrink-0 mt-[2px]" />
-              <span>{point}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-
       {/* Calendar Section */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 max-w-5xl mx-auto">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 w-full">
         <SectionHeading>
           <span className="block text-center leading-snug">
             Sample IEC Activities Calendar <br className="md:hidden" /> (ULB Campaign)
@@ -234,7 +213,7 @@ export default function IECServices() {
         </SectionHeading>
 
         {/* Desktop Table */}
-        <div className="hidden md:block overflow-x-auto">
+        <div className="hidden md:block overflow-x-auto w-full">
           <table className="min-w-full border border-gray-200 text-left text-sm md:text-base">
             <thead className="bg-[#294A63] text-white">
               <tr>
@@ -270,14 +249,12 @@ export default function IECServices() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 text-center bg-[#294A63] text-white">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 text-center bg-[#294A63] text-white w-full">
         <h2 className="text-2xl sm:text-3xl font-bold mb-6">
           Let’s Build a Cleaner, Smarter Bulandshahr (and Beyond) Together
         </h2>
-        <p className="max-w-3xl mx-auto mb-8 text-base sm:text-lg leading-relaxed">
-          With Bizwoke Nova’s IEC expertise, your ULB can create impactful
-          campaigns that educate, engage, and empower citizens—ensuring better
-          Swachh Survekshan 2025 rankings and sustainable cleanliness.
+        <p className="text-base sm:text-lg leading-relaxed mb-8 px-2 sm:px-6">
+          With Bizwoke Nova’s IEC expertise, your ULB can create impactful campaigns that educate, engage, and empower citizens—ensuring better Swachh Survekshan 2025 rankings and sustainable cleanliness.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button className="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
@@ -288,6 +265,7 @@ export default function IECServices() {
           </button>
         </div>
       </section>
+
     </div>
   );
 }

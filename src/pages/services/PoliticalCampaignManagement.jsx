@@ -52,7 +52,7 @@ const PoliticalCampaignManagement = () => {
             </form>
 
             {/* Right: Copy */}
-            <div className="text-gray-100 leading-7 pt-50">
+            <div className="text-xl text-justify leading-7">
               <p>
                 Your City is asking to perceive your voice because elections are
                 coming. This is the time to raise your Opinions to express your
@@ -71,30 +71,18 @@ const PoliticalCampaignManagement = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div className="space-y-6">
               <div className="bg-orange-500 text-white px-6 py-3 rounded-lg inline-block">
-                <h3 className="text-lg font-semibold">
+                <h3 className="text-4xl font-semibold text-center">
                   Pre-Ticket Services with Us:
                 </h3>
               </div>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
-                  <span>Website Designing</span>
+              <ul className="space-y-3 text-xl text-gray-600 text-justify mx-auto w-4/5">
+                <li>• Website Designing</li>
+                <li>• Search Engine Optimization to top Rank the profile</li>
+                <li>
+                  • Profile correlation with Senior Politicians & Party Head
+                  Office
                 </li>
-                <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
-                  <span>Search Engine Optimization to top Rank the profile</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
-                  <span>
-                    Profile correlation with Senior Politicians & Party Head
-                    Office
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
-                  <span>Social Media Platform & Profile Management Services</span>
-                </li>
+                <li>• Social Media Platform & Profile Management Services</li>
               </ul>
             </div>
             <div className="flex justify-center">
@@ -121,30 +109,20 @@ const PoliticalCampaignManagement = () => {
             </div>
             <div className="space-y-6">
               <div className="bg-orange-500 text-white px-6 py-3 rounded-lg inline-block">
-                <h3 className="text-lg font-semibold">
+                <h3 className="text-4xl font-semibold text-center">
                   Pre-Ticket Services with Us:
                 </h3>
               </div>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
-                  <span>Website Designing</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
-                  <span>Search Engine Optimization to top Rank the profile</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
-                  <span>
-                    Profile correlation with Senior Politicians & Party Head
-                    Office
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
-                  <span>Social Media Platform & Profile Management Services</span>
-                </li>
+              <ul className="space-y-3 text-xl text-gray-600 text-justify mx-auto w-4/5">
+                <li>• Campaign Management and Monitoring</li>
+                <li>• Database Management</li>
+                <li>
+                  • Mobile Promotion</li>
+                <li>• Advertising</li>
+                <li>• Manpower Services</li>
+                <li>• Survey and Canvassing</li>
+                <li>• Social Media</li>
+                <li>• PR and Media Management</li>
               </ul>
             </div>
           </div>
@@ -157,30 +135,18 @@ const PoliticalCampaignManagement = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div className="space-y-6">
               <div className="bg-orange-500 text-white px-6 py-3 rounded-lg inline-block">
-                <h3 className="text-lg font-semibold">
-                  Pre-Ticket Services with Us:
+                <h3 className="text-4xl font-semibold text-center">
+                  Other Services:
                 </h3>
               </div>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
-                  <span>Website Designing</span>
+              <ul className="space-y-3 text-xl text-gray-600 text-justify mx-auto w-4/5">
+                <li>• Email Marketing</li>
+                <li>• SMS Marketing</li>
+                <li>
+                  • Call Centres
                 </li>
-                <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
-                  <span>Search Engine Optimization to top Rank the profile</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
-                  <span>
-                    Profile correlation with Senior Politicians & Party Head
-                    Office
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
-                  <span>Social Media Platform & Profile Management Services</span>
-                </li>
+                <li>• Bulk WhatsApp Message</li>
+                <li>• Other Offline Promotions</li>
               </ul>
             </div>
             <div className="flex justify-center">
@@ -197,7 +163,7 @@ const PoliticalCampaignManagement = () => {
       {/* Our Cityportals Section */}
       <section className="w-screen py-12">
         <div className="max-w-7xl mx-auto px-6 bg-orange-500 py-4 mb-8 rounded-lg">
-          <h2 className="text-center text-white text-2xl font-bold">
+          <h2 className="text-center text-white text-4xl font-bold">
             Our Cityportals
           </h2>
         </div>
@@ -214,7 +180,7 @@ const PoliticalCampaignManagement = () => {
               <h3 className="text-orange-500 text-xl font-bold mb-3">
                 City Portal BN
               </h3>
-              <p className="text-white leading-6">
+              <p className="text-white text-justify leading-6 mx-auto w-4/5">
                 We have city portals for more than 50 cities of UP and
                 Uttarakhand. We are also developing city portals for 500+ cities
                 of India. Our main concern to create city portals to attract
@@ -232,7 +198,7 @@ const PoliticalCampaignManagement = () => {
               <h3 className="text-orange-500 text-xl font-bold mb-3">
                 City Portal BN
               </h3>
-              <ul className="text-white space-y-2 mb-5">
+              <ul className="text-white text-justify mx-auto w-4/5 space-y-2 mb-5">
                 <li>Profile Creation on City Portal</li>
                 <li>City portal are connected with all social platform</li>
                 <li>SEO(Google ranking) on Specific keywords</li>
@@ -246,7 +212,7 @@ const PoliticalCampaignManagement = () => {
       {/* Company's Own Portal Section */}
       <section className="w-screen py-12">
         <div className="max-w-7xl mx-auto px-6 bg-orange-500 py-4 mb-8 rounded-lg">
-          <h2 className="text-center text-white text-2xl font-bold">
+          <h2 className="text-center text-white text-4xl font-bold">
             Company’s Own Portal
           </h2>
         </div>
@@ -260,7 +226,7 @@ const PoliticalCampaignManagement = () => {
               className="mx-auto mb-4 bg-white p-3"
             />
             <h3 className="text-orange-500 text-xl font-bold mb-3">News BN</h3>
-            <p className="text-white leading-6">
+            <p className="text-white leading-6 text-justify mx-auto w-4/5">
               NewsBN.com is an online news website which covers hyper local and
               national news. We also create news for your campaigning to
               influence your voters and share on social media platforms.
@@ -277,7 +243,7 @@ const PoliticalCampaignManagement = () => {
             <h3 className="text-orange-500 text-xl font-bold mb-3">
               C2J Mantra
             </h3>
-            <p className="text-white leading-6">
+            <p className="text-white leading-6 text-justify mx-auto w-4/5">
               A placement solution for people looking for jobs and employers who
               need great employees. Provides training from expert trainers in
               Website Development, Digital Marketing, SEO, .Net, Core PHP, etc.
@@ -292,7 +258,7 @@ const PoliticalCampaignManagement = () => {
               className="mx-auto mb-4 bg-white p-3"
             />
             <h3 className="text-orange-500 text-xl font-bold mb-3">Blogs BN</h3>
-            <p className="text-white leading-6">
+            <p className="text-white leading-6 text-justify mx-auto w-4/5">
               BlogsBN.com is a platform for bloggers. Bloggers write different
               kinds of blogs and posts. We can ask our existing bloggers to
               write blogs for you and share them on social media.
@@ -312,7 +278,7 @@ const PoliticalCampaignManagement = () => {
             <h3 className="text-orange-500 text-xl font-bold mb-3">
               Polls Of India
             </h3>
-            <p className="text-white leading-6">
+            <p className="text-white leading-6 text-justify mx-auto w-4/5">
               PollsofIndia.com is one of the leading online polling websites.
               Create polls to increase your online reputation and positive buzz
               for your work.
@@ -329,7 +295,7 @@ const PoliticalCampaignManagement = () => {
             <h3 className="text-orange-500 text-xl font-bold mb-3">
               Profiles BN
             </h3>
-            <p className="text-white leading-6">
+            <p className="text-white leading-6 text-justify mx-auto w-4/5">
               ProfilesBN.com is a social media platform for professionals. Use
               this platform to put a banner of your work, share news, and
               connect with intellectual professionals.
@@ -340,35 +306,69 @@ const PoliticalCampaignManagement = () => {
 
       {/* Image - full width */}
       <div className="flex justify-end mb-8 px-4">
-  <img
-    src="/assets/Form-Image_600x430px.png"
-    alt="Political Campaign Management"
-    className="rounded-lg max-w-lg w-full h-auto object-contain "
-  />
-</div>
-
-
+        <img
+          src="/assets/Form-Image_600x430px.png"
+          alt="Political Campaign Management"
+          className="rounded-lg max-w-lg w-full h-auto object-contain"
+        />
+      </div>
 
       {/* Our Clients Section with Scrolling Logos */}
       <section className="w-screen py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 bg-orange-500 py-4 mb-8 rounded-lg">
-          <h2 className="text-center text-white text-2xl font-bold">
+          <h2 className="text-center text-white text-4xl font-bold">
             Our Clients
           </h2>
         </div>
 
         <div className="overflow-hidden whitespace-nowrap relative">
           <div className="animate-marquee flex space-x-16">
-            <img src="/assets/political-our-client/6-1-150x150.webp" alt="Client 1" className="h-40" />
-            <img src="/assets/political-our-client/7-1-150x150.webp" alt="Client 2" className="h-40" />
-            <img src="/assets/political-our-client/8-150x150.webp" alt="Client 3" className="h-40" />
-            <img src="/assets/political-our-client/9-1-150x150.webp" alt="Client 4" className="h-40" />
-            <img src="/assets/political-our-client/Amar-Ujala-150x150.webp" alt="Client 5" className="h-40" />
+            <img
+              src="/assets/political-our-client/6-1-150x150.webp"
+              alt="Client 1"
+              className="h-40"
+            />
+            <img
+              src="/assets/political-our-client/7-1-150x150.webp"
+              alt="Client 2"
+              className="h-40"
+            />
+            <img
+              src="/assets/political-our-client/8-150x150.webp"
+              alt="Client 3"
+              className="h-40"
+            />
+            <img
+              src="/assets/political-our-client/9-1-150x150.webp"
+              alt="Client 4"
+              className="h-40"
+            />
+            <img
+              src="/assets/political-our-client/Amar-Ujala-150x150.webp"
+              alt="Client 5"
+              className="h-40"
+            />
             {/* Repeat for smooth loop */}
-            <img src="/assets/political-our-client/6-1-150x150.webp" alt="Client 1" className="h-40" />
-            <img src="/assets/political-our-client/7-1-150x150.webp" alt="Client 2" className="h-40" />
-            <img src="/assets/political-our-client/8-150x150.webp" alt="Client 3" className="h-40" />
-            <img src="/assets/political-our-client/9-1-150x150.webp" alt="Client 4" className="h-40" />
+            <img
+              src="/assets/political-our-client/6-1-150x150.webp"
+              alt="Client 1"
+              className="h-40"
+            />
+            <img
+              src="/assets/political-our-client/7-1-150x150.webp"
+              alt="Client 2"
+              className="h-40"
+            />
+            <img
+              src="/assets/political-our-client/8-150x150.webp"
+              alt="Client 3"
+              className="h-40"
+            />
+            <img
+              src="/assets/political-our-client/9-1-150x150.webp"
+              alt="Client 4"
+              className="h-40"
+            />
           </div>
         </div>
       </section>

@@ -4,23 +4,23 @@ export default function SEOservices() {
   return (
     <section className="bg-gray-50 py-12">
       {/* full width container */}
-      <div className="w-full px-4 text-gray-700">
+      <div className="w-full px-4 text-[#294A63]">
 
         {/* ===== Title with dashed divider ===== */}
         <div className="relative mb-8 text-center">
-          <div className="absolute left-0 top-1/2 w-full border-t border-dashed border-gray-400"></div>
-          <h2 className="relative inline-block bg-gray-50 px-4 text-3xl font-bold text-[#294A63]">
+          <div className="absolute left-0 top-1/2 w-full border-t border-dashed border-[#294A63]"></div>
+          <h2 className="relative inline-block bg-gray-50 px-4 text-4xl font-bold text-[#294A63]">
             SEO Services
           </h2>
         </div>
 
         {/* ===== Intro ===== */}
-        <p className="mb-12 leading-relaxed">
+        <p className="mb-12 text-gray-600 text-lg text-justify leading-relaxed">
           The Clients rated us as the Best SEO service provider in Noida, and Delhi NCR.
           Call @ 8920877101 to know more about our unique{" "}
           {/* 🔗 changed span to anchor */}
           <a
-            href="https://your-destination-link.com"
+            href="https://bizwoke.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="font-medium text-red-600 underline"
@@ -133,16 +133,16 @@ export default function SEOservices() {
 
         {/* ===== Government Projects ===== */}
         <div className="mt-10">
-          <h3 className="mb-4 font-semibold underline">Popular Searches:</h3>
+          <h3 className="mb-4 font-semibold text-xl underline">Popular Searches:</h3>
           <p>
             <a href="https://bizwoke.com" target="_blank" rel="noopener noreferrer"
-              className="text-blue-600 hover:underline">
+              className="text-blue-600 text-xl hover:underline">
               Best SEO company in Noida
             </a>.
           </p>
           <p>
             <a href="https://bizwoke.com" target="_blank" rel="noopener noreferrer"
-              className="text-blue-600 hover:underline">
+              className="text-blue-600 text-xl hover:underline">
               Best SEO company in Noida
             </a>.
           </p>
@@ -156,22 +156,22 @@ export default function SEOservices() {
 /* ---------- Small Reusable Components ---------- */
 const SectionTitle = ({ title }) => (
   <div className="relative mb-8  text-center">
-    <div className="absolute left-0 top-1/2 w-full border-t border-dashed  border-gray-400"></div>
-    <h2 className="relative inline-block bg-gray-50 px-4 text-3xl font-bold text-[#294A63] ">
+    <div className="absolute left-0 top-1/2 w-full border-t border-dashed  text-[#294A63]"></div>
+    <h2 className="relative inline-block bg-gray-50 px-4 text-4xl font-bold text-[#294A63] ">
       {title}
     </h2>
   </div>
 );
 
 const List = ({ items }) => (
-  <ul className="list-disc pl-6 space-y-3 text-gray-700">
+  <ul className="list-disc pl-6 space-y-3 text-xl text-gray-600">
     {items.map((i, idx) => <li key={idx}>{i}</li>)}
   </ul>
 );
 
 const Column = ({ title, items }) => (
   <div>
-    <h3 className="mb-4 font-semibold underline">{title}</h3>
+    <h3 className="mb-4 text-xl font-semibold underline">{title}</h3>
     <List items={items} />
   </div>
 );

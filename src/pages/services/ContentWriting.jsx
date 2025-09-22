@@ -5,14 +5,14 @@ const contentWriting = () => {
     <div className="flex flex-col items-center justify-center px-4">
       {/* Title with line */}
       <div className="flex items-center w-full mb-6">
-        <div className="flex-grow border-t border-gray-400"></div>
-        <span className="mx-4 text-[#294A63] text-2xl sm:text-3xl md:text-4xl font-bold">
+        <div className="flex-grow border-t border-dashed border-[#294A63]"></div>
+        <span className="mx-4 text-[#294A63] text-4xl sm:text-4xl md:text-4xl font-bold">
           Content Writing
         </span>
-        <div className="flex-grow border-t border-gray-400"></div>
+        <div className="flex-grow border-t border-dashed border-[#294A63]"></div>
       </div>
 
-      <p className="text-center text-justify text-gray-600 max-w-3xl mx-auto mb-12 px-2">
+      <p className="text-center text-justify text-gray-600 max-w-auto mx-auto mb-12 px-2">
         Relevant content is the Great medium of sharing our Lifestyle, Hobbies,
         Product and Services details with our Friends, Colleagues or to target
         audience. Producing right content to attract and educate right audience
