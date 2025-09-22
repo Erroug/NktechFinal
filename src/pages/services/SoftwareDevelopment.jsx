@@ -47,7 +47,7 @@ const SoftwareDevelopment = () => {
       {/* Why Choose Us */}
       <div className="w-full max-w-5xl pt-10">
         <h2 className="text-center text-[#294A63] text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">
-          Why Choose NKtech?
+          Why Choose Bizwoke?
         </h2>
 
         <ul className="text-gray-600 space-y-3 sm:space-y-4 text-sm sm:text-base leading-relaxed">

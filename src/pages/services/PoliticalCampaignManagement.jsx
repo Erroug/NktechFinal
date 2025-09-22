@@ -58,7 +58,7 @@ const PoliticalCampaignManagement = () => {
                 coming. This is the time to raise your Opinions to express your
                 own city, who you are and how you will be an effective Elected
                 Individual to raise the city in forthcoming. So, join your hands
-                with us, NKTech is ready for the Election Campaigning:
+                with us, Bizwoke is ready for the Election Campaigning:
               </p>
             </div>
           </div>

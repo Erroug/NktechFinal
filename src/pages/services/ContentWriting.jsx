@@ -62,7 +62,7 @@ const contentWriting = () => {
               <p className="text-white text-justify leading-6">
               Blogging, telling a mass audience about fashion, Lifestyle, Books, 
               Travel or maybe some delicious recipes via various social platforms 
-              or some written material, is something on fire nowadays. Here at NKtech,
+              or some written material, is something on fire nowadays. Here at Bizwoke,
                we appreciate your Hobby, and really would like to put the best words 
                combination forward to tell about. So if you have such need, we are a call away.
               </p>

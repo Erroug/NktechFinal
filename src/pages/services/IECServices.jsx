@@ -112,7 +112,7 @@ export default function IECServices() {
 
   const whyChooseUs = [
     "Exclusive focus on ULBs & Government Projects",
-    "Backed by NKTech’s infrastructure & manpower",
+    "Backed by Bizwoke infrastructure & manpower",
     "Proven expertise in Swachh Bharat & municipal IEC campaigns",
     "Digital + Physical approach for maximum citizen engagement",
     "Compliance with Swachh Survekshan 2025 Toolkit",
