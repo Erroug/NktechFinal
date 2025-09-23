@@ -56,7 +56,7 @@ const PPCServices = () => {
 
   <p className="text-gray-600 text-xl text-justify leading-relaxed md:leading-loose">
     Among a large number of Digital Marketing Companies operating in
-    India, NK Tech holds a respectable position. We offer a wide range of
+    India, Bizwoke holds a respectable position. We offer a wide range of
     PPC Management Service and solutions. We are known for professional
     services in
     <span className="text-red-500"> SEO Company in Noida</span>
