@@ -8,7 +8,7 @@ const GraphicDesigning = () => {
         <div className="absolute top-1/2 left-0 w-full border-t border-dashed border-[#294A63] z-0"></div>
       </h2>
 
-      <p className="text-center text-justify text-gray-600 max-w-auto mx-auto mb-12">
+      <p className="text-center text-justify text-xl text-gray-600 max-w-auto mx-auto mb-12">
         Innovativeness is the fundamental principle of visual correspondence. ‘How you state’ is
         as a lot of significant as ‘what you state’ to offer your expression to champion. Normally,
         this aptitude isn’t some tea for everything except it must be created by hatching the

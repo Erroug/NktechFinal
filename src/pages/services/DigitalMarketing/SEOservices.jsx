@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SEOservices() {
   return (
-    <section className="bg-gray-50 py-12">
+    <section className="bg-gray-50 py-1">
       {/* full width container */}
       <div className="w-full px-4 text-[#294A63]">
 
@@ -133,16 +133,16 @@ export default function SEOservices() {
 
         {/* ===== Government Projects ===== */}
         <div className="mt-10">
-          <h3 className="mb-4 font-semibold text-xl underline">Popular Searches:</h3>
+          <h3 className="mb-4 font-bold text-2xl underline">Popular Searches:</h3>
           <p>
             <a href="https://bizwoke.com" target="_blank" rel="noopener noreferrer"
-              className="text-blue-600 text-xl hover:underline">
+              className="text-pink-600 text-xl underline hover:underline hover:text-blue-700">
               Best SEO company in Noida
             </a>.
           </p>
           <p>
             <a href="https://bizwoke.com" target="_blank" rel="noopener noreferrer"
-              className="text-blue-600 text-xl hover:underline">
+              className="text-pink-600 underline text-xl hover:underline hover:text-blue-700">
               Best SEO company in Noida
             </a>.
           </p>
@@ -171,7 +171,7 @@ const List = ({ items }) => (
 
 const Column = ({ title, items }) => (
   <div>
-    <h3 className="mb-4 text-xl font-semibold underline">{title}</h3>
+    <h3 className="mb-4 text-2xl font-bold underline">{title}</h3>
     <List items={items} />
   </div>
 );

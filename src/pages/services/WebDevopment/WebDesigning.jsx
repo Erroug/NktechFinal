@@ -15,7 +15,7 @@ const WebDesigning = () => {
 
       {/* ✅ Content Section */}
       <div className="flex flex-col items-center justify-center px-4 mt-8 sm:mt-12">
-  <p className="text-justify text-gray-600 max-w-3xl mx-auto mb-8 sm:mb-12 text-base sm:text-lg leading-relaxed">
+  <p className="text-justify text-gray-600 max-w-4xl mx-auto mb-8 sm:mb-12 text-base sm:text-xl leading-relaxed">
     Searching for website designing company or Website development company in Noida, Ghaziabad or Greater Noida. We offer 
     best Website designing services at very competitive price.<br/><br/>
 
@@ -123,10 +123,10 @@ const WebDesigning = () => {
 
           {/* Left Column */}
           <div>
-            <h3 className="text-[#294A63] text-lg sm:text-xl font-semibold mb-4">
+            <h3 className="text-[#294A63] text-lg sm:text-4xl font-bold mb-4">
               We have done
             </h3>
-            <ul className="list-disc list-inside text-gray-700 space-y-2 text-base sm:text-lg">
+            <ul className="list-disc list-inside text-gray-700 space-y-2 text-base sm:text-xl">
               <li>Website development for schools</li>
               <li>Website development for colleges</li>
               <li>Website development for hospitals</li>
@@ -138,10 +138,10 @@ const WebDesigning = () => {
 
           {/* Right Column */}
           <div>
-            <h3 className="text-[#294A63] text-lg sm:text-xl font-semibold mb-4">
+            <h3 className="text-[#294A63] text-lg sm:text-4xl font-bold mb-4">
               Type of websites we developed
             </h3>
-            <ul className="list-disc list-inside text-gray-700 space-y-2 text-base sm:text-lg">
+            <ul className="list-disc list-inside text-gray-600 space-y-2 text-base sm:text-xl">
               <li>Online Shopping carts</li>
               <li>Realestate portals</li>
               <li>Online Education portal</li>

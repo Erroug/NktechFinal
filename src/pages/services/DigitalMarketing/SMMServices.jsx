@@ -1,122 +1,116 @@
 import React from "react";
 
 const SectionTitle = ({ title }) => (
-  <h2 className="text-2xl md:text-3xl font-bold text-[#294A63] mb-6 text-center md:text-left">
-    {title}
-  </h2>
+  <div className="flex items-center mb-6">
+    <div className="border-t border-dashed border-[#294A63] flex-grow"></div>
+    <h2 className="px-4 text-2xl sm:text-3xl md:text-4xl font-bold text-[#294A63] text-center">
+      {title}
+    </h2>
+    <div className="border-t border-dashed border-[#294A63] flex-grow"></div>
+  </div>
 );
 
 const SMMServices = () => {
   return (
-    <div className="p-6 max-w-5xl mx-auto">
+    <div className="p-6 max-w-6xl mx-auto">
       {/* ===== Introduction to social media ===== */}
       <SectionTitle title="Introduction to Social Media" />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-12 items-center">
         <div className="flex justify-center">
           <img
             src="/assets/smm-services/social-media.jpg"
             alt="Introduction to social media"
-            className="h-auto w-full max-w-lg rounded-lg shadow-md"
+            className="w-full max-w-md md:max-w-lg rounded-lg shadow-md object-cover"
           />
         </div>
 
-        {/* Paragraph 1st */}
-        <p className="text-gray-700 leading-relaxed text-justify">
-          Setting up a Facebook Page, Twitter profile or a YouTube channel is
+        <p className="text-gray-600 text-lg sm:text-xl leading-relaxed text-justify">
+          Setting up a Facebook Page, Twitter profile, or a YouTube channel is
           not always the best place to start. We recommend an initial research
-          exercise to help discover what social media channel is right for you.
-          We will help you understand the different social networks and
-          platforms, explore how your customers use them and decide what social
-          networks are right for you and your customers.
+          exercise to discover the right social media channels for your business.
+          We help you understand platforms, explore customer behavior, and decide
+          what works best for you.
         </p>
       </div>
 
-      {/* ===== Directory Submissions ===== */}
+      {/* ===== Listening and Engagement ===== */}
       <SectionTitle title="Listening and Engagement" />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-12">
-        <p className="text-gray-700 leading-relaxed text-justify">
-          The next step is to find out what you customers are talking about. We simply call this ‘listening’.
-          This process is about delving into the various social networks and understanding what customers are saying about
-          your product, your industry and your service.<br /><br />
-
-          We take the most important phrases and topics in your business and create a report to help you divulge and understand this information.<br /><br />
-
-          The next step is to start to ‘engage’ with your audience. We will help you explore the right way to respond through social channels whether you are solving a complaint or thanking your customer for a compliment.
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-12 items-center">
+        <p className="text-gray-600 text-lg sm:text-xl leading-relaxed text-justify">
+          Listening involves analyzing social networks to understand what customers
+          are saying about your product, industry, and services. We create reports
+          highlighting key phrases and topics to help you engage effectively with your
+          audience, whether resolving complaints or thanking customers for positive feedback.
         </p>
+
         <div className="flex justify-center">
           <img
             src="/assets/smm-services/SocialEngagementCycle.jpg"
             alt="Listening and Engagement"
-            className="h-auto w-full max-w-lg rounded-lg shadow-md"
+            className="w-full max-w-md md:max-w-lg rounded-lg shadow-md object-cover"
           />
         </div>
       </div>
-
 
       {/* ===== Social Media Advertising ===== */}
       <SectionTitle title="Social Media Advertising" />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-12 items-center">
         <div className="flex justify-center">
           <img
             src="/assets/smm-services/Social-Media-Advertising-Software.jpg"
-            alt="Introduction Media Advertising"
-            className="h-auto w-full max-w-lg rounded-lg shadow-md"
+            alt="Social Media Advertising"
+            className="w-full max-w-md md:max-w-lg rounded-lg shadow-md object-cover"
           />
         </div>
 
-        {/* Paragraph 3rd */}
-        <p className="text-gray-700 leading-relaxed text-justify">
-
-          Facebook, Twitter and LinkedIn all offer advertising opportunities. 
-          Here at Fat Media we can talk you through the options available across 
-          these platforms and discuss how perhaps a location based geo-targeting 
-          strategy or a demographic selection approach could suit your business..
+        <p className="text-gray-600 text-lg sm:text-xl leading-relaxed text-justify">
+          Facebook, Twitter, and LinkedIn all offer advertising opportunities. 
+          We guide you through options including geo-targeting or demographic
+          selection strategies suited to your business needs.
         </p>
       </div>
 
-
       {/* ===== Pricing Section ===== */}
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-2 text-[#294A63]">Pricing</h2>
-        <p className="text-gray-700">
-          ₹7,500/- per month per platform + Third party charges as applicable.
+      <section className="mb-12">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-2 text-[#294A63] text-left">
+          Pricing
+        </h2>
+        <p className="text-gray-600 text-lg sm:text-xl text-left">
+          ₹7,500/- per month per platform + Third-party charges as applicable.
         </p>
       </section>
 
-
-
       {/* ===== FAQ Section ===== */}
-      <section>
-        <h2 className="text-2xl font-semibold mb-4 text-[#294A63]">FAQs</h2>
+      <section className="py-8">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-[#294A63] text-left">
+          FAQs
+        </h2>
 
-        <div className="mb-4">
-          <p className="font-medium text-gray-800">Q. How will it work?</p>
-          <p className="text-gray-700">
-            We will run a paid campaign on Facebook to increase page likes.
-            Facebook will promote your page globally. You will be charged per
-            like.
-          </p>
-        </div>
+        <div className="space-y-6">
+          <div>
+            <p className="text-2xl sm:text-3xl font-bold text-[#294A63] mb-2">Q. How will it work?</p>
+            <p className="text-gray-600 text-lg sm:text-xl">
+              We run a paid campaign on Facebook to increase page likes globally.
+              You are charged per like.
+            </p>
+          </div>
 
-        <div className="mb-4">
-          <p className="font-medium text-gray-800">Q. Will these likes be non-drop?</p>
-          <p className="text-gray-700">
-            Yes, they will be real human likes. If any drops occur, we will
-            refill and maintain likes for a month.
-          </p>
-        </div>
+          <div>
+            <p className="text-2xl sm:text-3xl font-bold text-[#294A63] mb-2">Q. Will these likes be non-drop?</p>
+            <p className="text-gray-600 text-lg sm:text-xl">
+              Yes, they are real human likes. Any drops are refilled and maintained for a month.
+            </p>
+          </div>
 
-        <div className="mb-4">
-          <p className="font-medium text-gray-800">
-            Q. What other social campaigns are offered?
-          </p>
-          <p className="text-gray-700">
-            Besides Facebook page likes, we also offer other SMM services based
-            on your needs.
-          </p>
+          <div>
+            <p className="text-2xl sm:text-3xl font-bold text-[#294A63] mb-2">Q. What other social campaigns are offered?</p>
+            <p className="text-gray-600 text-lg sm:text-xl">
+              Besides Facebook page likes, we also offer other SMM services tailored to your needs.
+            </p>
+          </div>
         </div>
       </section>
     </div>

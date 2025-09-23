@@ -71,19 +71,19 @@ const Portfolio = () => {
 
         {/* Website Development */}
         <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-center mb-8 relative">
-          <span className="px-4 bg-gray-50 relative z-10">
+          <span className="px-4 bg-gray-50 text-[#294a63] relative z-10">
             WEBSITE DEVELOPMENT
           </span>
-          <div className="absolute left-0 right-0 top-1/2 border-t border-gray-300 z-0"></div>
+          <div className="absolute left-0 right-0 top-1/2 border-t border-dashed border-[#294a63] z-0"></div>
         </h2>
         <LogoScroller items={websiteDevelopment} />
 
         {/* Digital Marketing */}
         <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-center my-12 relative">
-          <span className="px-4 bg-gray-50 relative z-10">
+          <span className="px-4 text-[#294a63] bg-gray-50 relative z-10">
             DIGITAL MARKETING
           </span>
-          <div className="absolute left-0 right-0 top-1/2 border-t border-gray-300 z-0"></div>
+          <div className="absolute left-0 right-0 top-1/2 border-t border-dashed border-[#294a63] z-0"></div>
         </h2>
         <LogoScroller items={digitalMarketing} reverse />
       </div>

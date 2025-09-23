@@ -12,7 +12,7 @@ const contentWriting = () => {
         <div className="flex-grow border-t border-dashed border-[#294A63]"></div>
       </div>
 
-      <p className="text-center text-justify text-gray-600 max-w-auto mx-auto mb-12 px-2">
+      <p className="text-center text-justify text-xl text-gray-600 max-w-auto mx-auto mb-12 px-2">
         Relevant content is the Great medium of sharing our Lifestyle, Hobbies,
         Product and Services details with our Friends, Colleagues or to target
         audience. Producing right content to attract and educate right audience

@@ -4,43 +4,40 @@ import { FaChevronRight } from "react-icons/fa";
 const GurugramContact = () => {
   return (
     <section className="max-w-7xl mx-auto px-4 py-12">
-      {/* Heading */}
-      <h2 className="text-center text-[#294A63] text-2xl md:text-3xl font-semibold mb-2">
-        Our Journey
-      </h2>
-      <div className="w-24 mx-auto border-b border-gray-400 mb-6"></div>
 
       {/* Services Section */}
-      <h2 className="text-center text-[#294A63] pt-30 text-4xl font-semibold mb-4">
-        Our Services
-      </h2>
+      <div className="relative mb-8 text-center">
+          <div className="absolute left-0 top-1/2 w-full border-t border-dashed border-[#294A63]"></div>
+          <h2 className="relative inline-block bg-gray-50 px-4 text-4xl font-bold text-[#294A63]">
+            Our Services
+          </h2>
+        </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10">
         <div>
-          <p className="px-13 text-left text-lg text-center content-justify text-gray-600">
-            Bizwoke is a leading SEO and Digital Marketing Company in Noida,
-            India. We also serve as a renowned SEO and Website Designing Company
-            in Ghaziabad, Noida, and Delhi. Since our inception in 2012, we have
-            consistently delivered exceptional services, helping businesses grow
-            by leveraging our expertise in SEO, PPC, SMO, and content writing.
-          </p>
-
-          <p className="px-13 text-left text-lg text-center pt-5 content-justify text-gray-600">
-            With over 550 satisfied customers worldwide and 1000+ successful
-            projects delivered, we are trusted by clients from diverse sectors,
-            including Hotels, Hospitals, FMCG companies, Doctors, Clinics,
-            Schools, Colleges, and many more.
+            <p className="px-13 text-xl text-center text-justify text-gray-600">
+          We are one of the best SEO company in Noida and ORM company in Noida, India. We are
+           also well-known SEO company in Ghaziabad. Website Designing Company in Ghaziabad,
+            Noida and Delhi, India. We began our operations as Best Digital Marketing Agency
+             in the year 2012 and since then have grown by leaps and bounds. From the very 
+             beginning, we have stayed true to our core beliefs and have delivered an exceptional 
+             experience for our customers. We have more than 500 satisfied customers over the globe 
+             and delivered more than 1000 projects in last 12 years. Our expertise in Digital marketing 
+             services which includes SEO, PPC, SMO and content writing. We have made websites and done
+              SEO for Hotels, Hospitals, FMCG companies, Doctors, Clinics, Schools and Colleges.
           </p>
         </div>
 
         <div>
-          <ul className="text-xl space-y-10 text-sm">
+          <ul className="text-xl space-y-5 text-sm">
             {[
               "SEO Services",
               "ORM Services",
-              "Website Designing",
-              "Website Maintenance",
-              "SMO Services",
               "SMM Services",
+              "SMO Services",
+              "PPC Services",
+              "VSO Services",
+              "Website Designing",
+              "SMM Maintenance",
             ].map((service, i) => (
               <li
                 key={i}
@@ -120,9 +117,14 @@ const GurugramContact = () => {
 
       {/* Location Map */}
       <div className="pt-16">
-        <h2 className="text-center text-[#294A63] text-2xl font-semibold mb-4">
-          Our Location - DLF Tower, 8th Rd, Cyber City, Gurugram
-        </h2>
+      <div className="relative mb-8 text-center">
+          <div className="absolute left-0 top-1/2 w-full border-t border-dashed border-[#294A63]"></div>
+          <h2 className="relative inline-block bg-gray-50 px-4 text-4xl font-bold text-[#294A63]">
+          {/* Our Location - DLF Tower, 8th Rd, Cyber City, Gurugram */}
+          Our Location
+
+          </h2>
+        </div>
         <div className="w-full h-96">
           <iframe
             title="DLF Tower, Cyber City Location"

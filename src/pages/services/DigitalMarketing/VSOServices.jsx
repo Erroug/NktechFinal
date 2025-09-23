@@ -8,10 +8,14 @@ const VSOServices = () => {
     <div className="w-full bg-white overflow-x-hidden">
       {/* ===== Intro Section ===== */}
       <section className="max-w-6xl mx-auto px-4 py-5">
-        <h1 className="text-3xl md:text-4xl font-bold text-[#294A63] mb-6 text-center">
+        <div className="flex items-center mb-6">
+        <div className="border-t border-dashed width-full flex-grow"></div>
+        <h1 className="text-3xl md:text-4xl font-bold text-[#294A63] px-4 text-center">
           Why invest in voice search optimization?
         </h1>
-        <p className="text-gray-700 text-left md:text-justify leading-relaxed">
+        <div className="border-t border-dashed width-full flex-grow"></div>
+        </div>
+        <p className="text-gray-600 text-left text-xl md:text-justify leading-relaxed">
           It is considered an effective tool to increase your market and customers. Recent
           stats show that more than 50% of people use voice search tools for searching
           businesses and business-related queries. Hence, to reach out to such people it is
@@ -25,12 +29,16 @@ const VSOServices = () => {
 
       <section className="bg-white py-12">
         <div className="max-w-7xl mx-auto px-4">
-          <h3 className="text-lg text-center text-[#294A63] md:text-4xl font-bold mb-6">
-            VSO Services
-          </h3>
+        <div className="flex items-center mb-6">
+        <div className="border-t border-dashed width-full flex-grow"></div>
+        <h1 className="text-3xl md:text-4xl font-bold text-[#294A63] px-4 text-center">
+          VSO Services
+        </h1>
+        <div className="border-t border-dashed width-full flex-grow"></div>
+        </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <div className="space-y-4 text-gray-700 text-center md:text-left">
-              <p className="text-justify">
+            <div className="space-y-4 text-gray-600 text-center md:text-left">
+              <p className="text-justify text-xl">
                 Voice search optimization enables your pages to appear in the voice search.
                 It is a process of optimizing your pages in such a manner that helps the maximum
                 number of people to visit your site or app by improving the visibility as well as
@@ -57,9 +65,13 @@ const VSOServices = () => {
 
       <section className="bg-gray-50 py-12">
         <div className="max-w-7xl mx-auto px-4">
-          <h3 className="text-lg text-center text-[#294A63] md:text-4xl font-bold mb-6">
-            Benefits one can gain
-          </h3>
+        <div className="flex items-center mb-6">
+        <div className="border-t border-dashed width-full flex-grow"></div>
+        <h1 className="text-3xl md:text-4xl font-bold text-[#294A63] px-4 text-center">
+          Benifits one can gain
+        </h1>
+        <div className="border-t border-dashed width-full flex-grow"></div>
+        </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div className="flex justify-center">
               <img
@@ -68,8 +80,8 @@ const VSOServices = () => {
                 className="w-full max-w-xs md:max-w-xs h-48 object-contain rounded-lg"
               />
             </div>
-            <div className="space-y-4 text-gray-700 text-center md:text-left">
-              <p className="text-justify">
+            <div className="space-y-4 text-gray-600 text-center md:text-left">
+              <p className="text-justify text-xl">
                 Improves voice search ranking
                 The algorithm used in voice search is designed in a manner
                 that it gives only those answers that are similar to the question.
@@ -85,12 +97,16 @@ const VSOServices = () => {
 
       <section className="bg-white py-12">
         <div className="max-w-7xl mx-auto px-4">
-          <h3 className="text-lg text-center text-[#294A63] md:text-4xl font-bold mb-6">
-            Why choose Bizwoke
-          </h3>
+        <div className="flex items-center mb-6">
+        <div className="border-t border-dashed width-full flex-grow"></div>
+        <h1 className="text-3xl md:text-4xl font-bold text-[#294A63] px-4 text-center">
+          Why choose Bizwoke
+        </h1>
+        <div className="border-t border-dashed width-full flex-grow"></div>
+        </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <div className="space-y-4 text-gray-700 text-center md:text-left">
-              <p className="text-justify">
+            <div className="space-y-4 text-gray-600 text-center md:text-left">
+              <p className="text-justify text-xl">
                 Known for its SEO services, We have done extensive research on VSO and developed a
                 tested process to rank your website top at search engines through our VSO services.<br /> <br />
 

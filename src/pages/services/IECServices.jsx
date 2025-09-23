@@ -22,13 +22,13 @@ const Card = ({ title, points, isBig }) => (
   >
     <h3
       className={`${
-        isBig ? "text-2xl" : "text-xl"
+        isBig ? "text-2xl" : "text-2xl"
       } font-semibold mb-6 text-blue-700 text-center`}
     >
       {title}
     </h3>
     <div className="flex justify-center">
-      <ul className="space-y-3 text-gray-700 text-base sm:text-lg leading-relaxed w-full">
+      <ul className="space-y-3 text-gray-600 text-base sm:text-xl leading-relaxed w-full">
         {points.map((point, i) => (
           <li key={i} className="flex items-start gap-3">
             <CheckCircle className="text-green-600 w-[22px] h-[22px] flex-shrink-0 mt-[2px]" />
@@ -127,7 +127,7 @@ export default function IECServices() {
   ];
 
   return (
-    <div className="w-full bg-white text-gray-800">
+    <div className="w-full bg-white text-gray-600">
 
       {/* Hero Section */}
       <section className="relative bg-[#294A63] text-white text-center py-16 md:py-20 px-4 sm:px-6 w-full">
@@ -185,7 +185,7 @@ export default function IECServices() {
       </section>
 
       {/* Our Offerings */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 w-full">
+      <section className="py-12 sm:py-5 px-4 sm:px-6 w-full">
         <SectionHeading>Our Offerings</SectionHeading>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
           {offerings.map((offering, i) => (

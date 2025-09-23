@@ -3,10 +3,24 @@ import React from 'react'
 const WebDeveloping = () => {
   return (
     <div className="flex flex-col items-center justify-center px-4">
-      {/* Our Cityportals Section */}
+      {/* Title Section with dashed border */}
+      <div className="relative mb-12 flex items-center w-full max-w-4xl">
+        {/* Left line */}
+        <div className="flex-grow border-t border-dashed border-[#294A63]"></div>
+
+        {/* Title */}
+        <h2 className="px-4 text-2xl sm:text-3xl md:text-4xl font-bold text-[#294A63] bg-gray-50 whitespace-nowrap">
+          Technology
+        </h2>
+
+        {/* Right line */}
+        <div className="flex-grow border-t border-dashed border-[#294A63]"></div>
+      </div>
+
+      {/* Cards Section */}
       <section className="w-screen py-12">
         <div className="max-w-7xl mx-auto px-4">
-          {/* Responsive grid: 1 col mobile, 2 col tablet, 3 col desktop */}
+          {/* Responsive grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
             {/* Card 1 */}

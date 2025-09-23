@@ -14,10 +14,18 @@ const SMOServices = () => {
 
       <div className="max-w-5xl mx-auto p-6 md:p-10">
         {/* ===== Introduction ===== */}
-        <h1 className="text-3xl md:text-4xl font-bold text-[#294A63] mb-6 text-center">
-          Introduction to Social Media
-        </h1>
-        <div className="space-y-5 text-justify leading-relaxed">
+        <div className="flex items-center mb-6">
+          <div className="flex-grow border-t border-dashed border-[#294A63]"></div>
+
+          <h1 className="px-4 text-2xl sm:text-3xl md:text-4xl font-bold text-[#294A63] text-center whitespace-nowrap">
+            Introduction to Social Media
+          </h1>
+
+          <div className="flex-grow border-t border-dashed border-[#294A63]"></div>
+        </div>
+
+
+        <div className="space-y-5 text-justify text-gray-600 text-xl leading-relaxed">
           <p>
             Even after being designed and developed in a proper way, some
             websites do not catch the attention of the users. Bizwoke offers
@@ -55,12 +63,19 @@ const SMOServices = () => {
           </p>
         </div>
 
-        {/* ===== Services ===== */}
-        <h2 className="text-2xl md:text-3xl font-bold text-[#294A63] mt-12 mb-4">
-          Social Media Optimization Services
-        </h2>
-        <h3 className="text-xl font-semibold mb-2">SMO services India include:</h3>
-        <ul className="list-disc list-inside space-y-1 ml-4">
+{/* ===== Services ===== */}
+<div className="flex items-center mb-6 pt-10">
+  <div className="flex-grow border-t border-dashed border-[#294A63]"></div>
+  
+  <h2 className="px-4 text-xl sm:text-2xl md:text-4xl font-bold text-[#294A63] text-center whitespace-nowrap">
+    Social Media Optimization Services
+  </h2>
+  
+  <div className="flex-grow border-t border-dashed border-[#294A63]"></div>
+</div>
+
+        <h3 className="text-2xl font-bold text-[#294A63] mb-2">SMO services India include:</h3>
+        <ul className="list-disc list-inside text-gray-600 text-xl space-y-1 ml-4">
           <li>Forum Marketing</li>
           <li>Blog Marketing (Blogging / Video Blogging)</li>
           <li>Classified ads</li>
@@ -68,10 +83,10 @@ const SMOServices = () => {
           <li>Event Marketing</li>
         </ul>
 
-        <h3 className="text-xl font-semibold mt-6 mb-2">
+        <h3 className="text-2xl font-bold text-[#294A63] mt-6 mb-2">
           Main benefits of a Social Media Optimization Service:
         </h3>
-        <ul className="list-disc list-inside space-y-1 ml-4">
+        <ul className="list-disc list-inside text-gray-600 text-xl space-y-1 ml-4">
           <li>Drives traffic in search engine</li>
           <li>Increase business</li>
           <li>Lead Generation</li>
@@ -81,10 +96,10 @@ const SMOServices = () => {
         </ul>
 
         {/* ===== Benefits Section ===== */}
-        <h2 className="text-2xl md:text-3xl font-bold text-[#294A63] mt-12 mb-4">
-          How Social Media Optimization Benefits You
+        <h2 className="text-2xl md:text-4xl font-bold text-[#294A63] mt-12 mb-4">
+          How Social Media Optimization Benefits You?
         </h2>
-        <ul className="list-disc pl-8">
+        <ul className="list-disc text-gray-600 text-justify text-xl pl-8">
           <li className="pl-2 -indent-2">
             A well planned and properly executed SMO will convert more visitors
             into customers.
@@ -107,10 +122,10 @@ const SMOServices = () => {
         </ul>
 
         {/* ===== Pricing ===== */}
-        <h2 className="text-2xl md:text-3xl font-bold text-[#294A63] mt-12 mb-4">
+        <h2 className="text-2xl md:text-4xl font-bold text-[#294A63] mt-12 mb-4">
           Price
         </h2>
-        <p className="text-lg font-semibold text-gray-700">
+        <p className="text-xl font-semibold text-gray-600">
           Rs. 10,000/- per month per platform
         </p>
       </div>

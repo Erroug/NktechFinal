@@ -181,7 +181,7 @@ const NoidaContact = () => {
           </h2>
         </div>
 
-        <p className="text-left text-justify text-gray-600 max-w-xl mx-auto mb-12 text-xl">
+        <p className="text-left text-justify text-gray-600  mx-auto mb-12 text-xl">
   We have developed a unique local ecosystem portal for cities, enabling
   users to find local businesses, jobs, news, events, and much more. <br />
   Currently live in 30 cities, we aim to expand to 500 cities in the

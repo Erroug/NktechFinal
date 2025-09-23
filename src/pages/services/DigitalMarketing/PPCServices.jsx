@@ -35,19 +35,26 @@ const PPCServices = () => {
   return (
     <div className="w-full bg-white overflow-x-hidden">
       {/* ===== Intro Section ===== */}
-<section className="max-w-6xl mx-auto px-4 py-12">
-  <h1 className="text-3xl md:text-4xl font-bold text-[#294A63] mb-6 text-center">
+<section className="max-w-6xl mx-auto px-4">
+<div className="flex items-center mb-6">
+  <div className="flex-grow border-t border-dashed border-[#294A63]"></div>
+
+  <h1 className="px-4 text-2xl sm:text-3xl md:text-4xl font-bold text-[#294A63] text-center whitespace-nowrap">
     PPC Services
   </h1>
 
-  <p className="text-gray-700 text-justify leading-relaxed md:leading-loose">
+  <div className="flex-grow border-t border-dashed border-[#294A63]"></div>
+</div>
+
+
+  <p className="text-gray-600  text-xl text-justify leading-relaxed md:leading-loose">
     Searching for PPC Management Services or
     <span className="text-red-500"> Website development company in Noida</span>,
     Ghaziabad or Greater Noida. We offer Best PPC Management
     Services in Noida at very competitive price.
   </p>
 
-  <p className="text-gray-700 text-justify leading-relaxed md:leading-loose">
+  <p className="text-gray-600 text-xl text-justify leading-relaxed md:leading-loose">
     Among a large number of Digital Marketing Companies operating in
     India, NK Tech holds a respectable position. We offer a wide range of
     PPC Management Service and solutions. We are known for professional
@@ -59,7 +66,7 @@ const PPCServices = () => {
     ensuring a great Digital marketing campaign or business application.
   </p>
 
-  <p className="text-gray-700 text-justify leading-relaxed md:leading-loose">
+  <p className="text-gray-600 text-xl text-justify leading-relaxed md:leading-loose">
     We have
     <span className="text-red-500"> India’s best digital marketing team</span>
     in perfect combination with the most comprehensive SEO managers
@@ -68,7 +75,7 @@ const PPCServices = () => {
     ahead of the rest.
   </p>
 
-  <p className="text-gray-700 text-justify leading-relaxed md:leading-loose">
+  <p className="text-gray-600 text-xl text-justify leading-relaxed md:leading-loose">
     Our company has been offering its Digital Marketing for more than 8
     years to clients from all over the world. We make sure that all our
     clients are 100% satisfied with our Digital Marketing with the best
@@ -80,12 +87,18 @@ const PPCServices = () => {
       {/* ===== Section 1: PPC Services ===== */}
       <section className="bg-white py-12">
         <div className="max-w-7xl mx-auto px-4">
-          <h3 className="text-lg text-center text-[#294A63] md:text-4xl font-bold mb-6">
-            PPC Services
-          </h3>
+        <div className="flex items-center mb-6">
+  <div className="flex-grow border-t border-dashed border-[#294A63]"></div>
+
+  <h1 className="px-4 text-2xl sm:text-3xl md:text-4xl font-bold text-[#294A63] text-center whitespace-nowrap">
+    PPC Services
+  </h1>
+
+  <div className="flex-grow border-t border-dashed border-[#294A63]"></div>
+</div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <div className="space-y-4 text-gray-700 text-center md:text-left">
-              <ul className="space-y-2 list-inside list-disc">
+            <div className="space-y-4 text-gray-600 text-center md:text-left">
+              <ul className="space-y-2 text-xl list-inside list-disc">
                 <li>Landing page optimization and development</li>
                 <li>Keyword research and selection</li>
                 <li>Creative development</li>
@@ -95,33 +108,39 @@ const PPCServices = () => {
               </ul>
             </div>
             <div className="flex justify-center">
-              <img
-                src="/assets/ppc-services/ppc-removebg-preview-300x300-1.png"
-                alt="PPC Services"
-                className="w-full max-w-xs md:max-w-xs h-48 object-contain rounded-lg"
-              />
-            </div>
+  <img
+    src="/assets/ppc-services/ppc-removebg-preview-300x300-1.png"
+    alt="PPC Services"
+    className="w-full max-w-[250px] sm:max-w-[300px] md:max-w-[350px] object-contain rounded-lg"
+  />
+</div>
           </div>
         </div>
       </section>
 
       {/* ===== Platforms Banner ===== */}
-      <section className="bg-gray-50 py-10">
-        <div className="max-w-6xl mx-auto px-4">
-          <img
-            src="/assets/ppc-services/brand.jpg"
-            alt="PPC Platforms"
-            className="w-full h-auto mx-auto object-contain rounded-lg"
-          />
-        </div>
-      </section>
+<section className="bg-gray-50 py-10">
+  <div className="max-w-[1800px] mx-auto px-2">
+    <img
+      src="/assets/ppc-services/brand.jpg"
+      alt="PPC Platforms"
+      className="w-full h-auto mx-auto object-contain rounded-lg"
+    />
+  </div>
+</section>
+
 
       {/* ===== Section 2: PPC Audit ===== */}
       <section className="bg-gray-50 py-12">
         <div className="max-w-7xl mx-auto px-4">
-          <h3 className="text-lg text-center text-[#294A63] md:text-4xl font-bold mb-6">
+          <div className="flex items-center mb-6">
+            <div className="border-t border-dashed width-auto flex-grow"></div>
+          <h3 className="text-lg text-center text-[#294A63] md:text-4xl font-bold px-4 whitespace-nowrap">
             PPC Audit
           </h3>
+          <div className="border-t border-dashed width-auto flex-grow"></div>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div className="flex justify-center">
               <img
@@ -130,8 +149,8 @@ const PPCServices = () => {
                 className="w-full max-w-xs md:max-w-xs h-48 object-contain rounded-lg"
               />
             </div>
-            <div className="space-y-4 text-gray-700 text-center md:text-left">
-              <p>
+            <div className="space-y-4 text-gray-600 text-center md:text-left">
+              <p className="text-xl text-justify"> 
                 This is for customers who do not necessarily want to close their PPC providers 
                 but are not aware of the flaws in their current campaigns and PPC management services. 
                 Our best PPC experts will comb through your account and give you the same advice that we eat in your account.
@@ -144,12 +163,17 @@ const PPCServices = () => {
       {/* ===== Section 3: Facebook Ads ===== */}
       <section className="bg-white py-12">
         <div className="max-w-7xl mx-auto px-4">
-          <h3 className="text-lg text-center text-[#294A63] md:text-4xl font-bold mb-6">
+          <div className=" flex items-center mb-6 ">
+            <div className="border-t border-dashed width-full flex-grow "></div> 
+
+          <h3 className="text-lg text-center text-[#294A63] md:text-4xl font-bold px-4">
             Facebook Ads
           </h3>
+          <div className="border-t border-dashed width-full flex-grow "></div> 
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <div className="space-y-4 text-gray-700 text-center md:text-left">
-              <p>
+            <div className="space-y-4 text-gray-600 text-center md:text-left">
+              <p className="text-justify text-xl">
                 Facebook has made its way into almost every home and Facebook advertising
                 is the perfect complement to any search marketing campaign. With 1.79 Billion daily
                 active users worldwide, Facebook is a major social media platform and also a great advertising platform.
@@ -169,9 +193,14 @@ const PPCServices = () => {
       {/* ===== Section 4: Google Adwords ===== */}
       <section className="bg-gray-50 py-12">
         <div className="max-w-7xl mx-auto px-4">
-          <h3 className="text-lg text-center text-[#294A63] md:text-4xl font-bold mb-6">
+           <div className=" flex items-center mb-6 ">
+            <div className="border-t border-dashed width-full flex-grow "></div> 
+
+          <h3 className="text-lg text-center text-[#294A63] md:text-4xl font-bold px-4">
             Google Adwords
           </h3>
+          <div className="border-t border-dashed width-full flex-grow "></div> 
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div className="flex justify-center">
               <img
@@ -180,8 +209,8 @@ const PPCServices = () => {
                 className="w-full max-w-xs md:max-w-xs h-48 object-contain rounded-lg"
               />
             </div>
-            <div className="space-y-4 text-gray-700 text-center md:text-left">
-              <p>
+            <div className="space-y-4 text-gray-600 text-center md:text-left">
+              <p className="text-justify text-xl"> 
                 Whatever your target audience searches on Google, your name will be
                 placed on the top searches. With Google accounting for 2/3 of all Google
                 searches, AdWord is the most effective Pay Per Click advertising. Google
@@ -195,12 +224,17 @@ const PPCServices = () => {
       {/* ===== Section 5: Shopping ===== */}
       <section className="bg-white py-12">
         <div className="max-w-7xl mx-auto px-4">
-          <h3 className="text-lg text-center text-[#294A63] md:text-4xl font-bold mb-6">
+        <div className=" flex items-center mb-6 ">
+            <div className="border-t border-dashed width-full flex-grow "></div> 
+
+          <h3 className="text-lg text-center text-[#294A63] md:text-4xl font-bold px-4">
             Shopping
           </h3>
+          <div className="border-t border-dashed width-full flex-grow "></div> 
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <div className="space-y-4 text-gray-700 text-center md:text-left">
-              <p>
+            <div className="space-y-4 text-gray-600 text-center md:text-left">
+              <p className="text-justify text-xl">
                 Google provides shopping ads to allow you to show different products
                 directly in search results. Shopping ads appear above organic listings
                 for almost all terms centered around commercial products and even sometimes above standard paid search ads.
@@ -220,9 +254,14 @@ const PPCServices = () => {
       {/* ===== Section 6: Remarketing ===== */}
       <section className="bg-gray-50 py-12">
         <div className="max-w-7xl mx-auto px-4">
-          <h3 className="text-lg text-center text-[#294A63] md:text-4xl font-bold mb-6">
+        <div className=" flex items-center mb-6 ">
+            <div className="border-t border-dashed width-full flex-grow "></div> 
+
+          <h3 className="text-lg text-center text-[#294A63] md:text-4xl font-bold px-4">
             Remarketing
           </h3>
+          <div className="border-t border-dashed width-full flex-grow "></div> 
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div className="flex justify-center">
               <img
@@ -231,8 +270,8 @@ const PPCServices = () => {
                 className="w-full max-w-xs md:max-w-xs h-48 object-contain rounded-lg"
               />
             </div>
-            <div className="space-y-4 text-gray-700 text-center md:text-left">
-              <p>
+            <div className="space-y-4 text-gray-600 text-center md:text-left">
+              <p className="text-justify text-xl">
                 We offer full re-marketing services including campaign
                 development and management services. Our expertise ensures
                 that companies are more likely to invest their advertising
@@ -245,14 +284,14 @@ const PPCServices = () => {
 
       {/* ===== FAQ Section ===== */}
       <section className="w-full px-4 py-12">
-        <h2 className="text-2xl md:text-3xl font-bold text-[#294A63] mb-6 text-left">
+        <h2 className="text-2xl md:text-4xl font-bold text-[#294A63] mb-6 text-left">
           FAQ's
         </h2>
         <div className="space-y-4">
           {faqs.map((faq, index) => (
             <div key={index} className="border-b border-gray-200 pb-2">
               <button
-                className="w-full flex items-start gap-2 text-left text-blue-600 underline font-medium text-lg md:text-xl cursor-pointer"
+                className="w-full flex items-start gap-2 text-left text-blue-700 underline font-medium text-lg md:text-xl cursor-pointer"
                 onClick={() =>
                   setActiveIndex(activeIndex === index ? null : index)
                 }
@@ -265,7 +304,7 @@ const PPCServices = () => {
                 <span>{faq.question}</span>
               </button>
               {activeIndex === index && (
-                <p className="mt-2 text-gray-700">{faq.answer}</p>
+                <p className="mt-2 text-gray-600">{faq.answer}</p>
               )}
             </div>
           ))}
@@ -273,10 +312,10 @@ const PPCServices = () => {
       </section>
 
       {/* ===== Pricing ===== */}
-      <h2 className="text-2xl md:text-3xl font-bold text-[#294A63] mt-12 mb-4">
+      <h2 className="text-2xl md:text-4xl font-bold text-[#294A63] mt-12 mb-4">
         Price
       </h2>
-      <p className="text-lg font-semibold text-gray-700">
+      <p className="text-xl font-semibold text-gray-600">
         Rs. 15,000/- per month per platform + Third party charges as Actual
       </p>
     </div>
