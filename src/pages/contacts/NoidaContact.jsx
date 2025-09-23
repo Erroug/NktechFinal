@@ -1,53 +1,52 @@
 import React from "react";
-import { FaPhoneAlt, FaMapMarkerAlt, FaChevronRight } from "react-icons/fa";
+import { FaChevronRight } from "react-icons/fa";
 
 const NoidaContact = () => {
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
-      {/* Heading */}
-        <div className="relative mb-8 text-center">
-          <div className="absolute left-0 top-1/2 w-full border-t border-dashed border-[#294A63]"></div>
-          <h2 className="relative inline-block bg-gray-50 px-4 text-4xl font-bold text-[#294A63]">
-            Our Journey
-          </h2>
-        </div>
+      {/* ===== Our Journey ===== */}
+      <div className="relative mb-8 text-center">
+        <div className="absolute left-0 top-1/2 w-full border-t border-dashed border-[#294A63]"></div>
+        <h2 className="relative inline-block bg-gray-50 px-4 text-4xl font-bold text-[#294A63]">
+          Our Journey
+        </h2>
+      </div>
 
-      {/* Description */}
-      <p className="pt-7 text-center  text-xl text-gray-600 mb-12">
+      <p className="pt-7 text-center text-xl text-gray-600 mb-12">
         Starting as a Digital Marketing Agency, we have expanded into Website
         Development, Software Development, and other IT solutions. Our
         dedication to our core values has fueled our growth over the past
         decade.
       </p>
 
-      {/* Contact Section */}
+      {/* ===== Contact Section ===== */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Form */}
         <div className="pt-10 md:pt-20 md:col-span-2 space-y-4">
           <input
             type="text"
             placeholder="Name"
-            className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-1 focus:ring-black-500"
+            className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-1 focus:ring-[#294A63]"
           />
           <input
             type="email"
             placeholder="Email"
-            className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-1 focus:ring-black-500"
+            className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-1 focus:ring-[#294A63]"
           />
           <input
             type="tel"
             placeholder="Phone Number"
-            className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-1 focus:ring-black-500"
+            className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-1 focus:ring-[#294A63]"
           />
           <input
             type="text"
             placeholder="Subject"
-            className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-1 focus:ring-black-500"
+            className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-1 focus:ring-[#294A63]"
           />
           <textarea
             placeholder="Your Message"
             rows="4"
-            className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-1 focus:ring-black-500"
+            className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-1 focus:ring-[#294A63]"
           ></textarea>
           <button className="bg-[#093256] text-white px-6 py-2 rounded hover:bg-[#0f4c81] transition">
             Submit
@@ -57,9 +56,9 @@ const NoidaContact = () => {
         {/* Contact Info */}
         <div className="space-y-6">
           <div>
-            <h3 className="text-lg pt-8 font-semibold">Phone</h3>
+            <h3 className="text-lg font-semibold">Phone</h3>
             <a
-              href="tel:+91 7836055511"
+              href="tel:+917836055511"
               className="text-blue-600 underline hover:underline"
             >
               +91 7836055511
@@ -77,21 +76,27 @@ const NoidaContact = () => {
           </div>
 
           <div>
-            <h3 className="text-lg pt-8 font-semibold">Address</h3>
-            <a href="address" className="text-blue-600 hover:underline">
+            <h3 className="text-lg font-semibold">Address</h3>
+            <a
+              href="https://maps.google.com?q=307B+3rd+Floor+I+Thum+Tower+-+A,+Sector+62,+Noida+201301"
+              className="text-blue-600 hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               307B 3rd Floor I Thum Tower - A, Sector 62, Noida 201301
             </a>
           </div>
         </div>
       </div>
 
-      {/* Our Services */}
-      <div className="relative mb-8 text-center">
-          <div className="absolute left-0 top-1/2 w-full border-t border-dashed border-[#294A63]"></div>
-          <h2 className="relative inline-block bg-gray-50 px-4 text-4xl font-bold text-[#294A63]">
-            Our Services
-          </h2>
-        </div>
+      {/* ===== Our Services ===== */}
+      <div className="relative mt-20 mb-8 text-center">
+        <div className="absolute left-0 top-1/2 w-full border-t border-dashed border-[#294A63]"></div>
+        <h2 className="relative inline-block bg-gray-50 px-4 text-4xl font-bold text-[#294A63]">
+          Our Services
+        </h2>
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10">
         <div>
           <p className="text-gray-600 text-xl text-justify mb-5">
@@ -109,11 +114,8 @@ const NoidaContact = () => {
             Schools, Colleges, and many more.
           </p>
 
-          <p className ="text-gray-600 text-xl">Our Journey
-
-          </p><br/>
-
-          <p className="text-gray-600 text-xl">
+          <p className="text-gray-600 text-xl font-semibold">Our Journey</p>
+          <p className="text-gray-600 text-xl text-justify mt-2">
             Started as a Digital Marketing Agency, we have expanded into Website
             Development, Software Development, and other IT solutions. Our
             dedication to our core values has fueled our growth over the past
@@ -122,20 +124,22 @@ const NoidaContact = () => {
         </div>
 
         <div>
-          <ul className="space-y-6 text-lg">
+          <ul className="space-y-5 text-[#294A63] font-semibold text-xl">
             {[
               "SEO Services",
               "ORM Services",
-              "Website Designing",
-              "Website Maintenance",
-              "SMO Services",
               "SMM Services",
+              "SMO Services",
+              "PPC Services",
+              "VSO Services",
+              "Website Designing",
+              "SMM Maintenance",
             ].map((service, i) => (
               <li
                 key={i}
                 className="flex items-center gap-2 border-b border-gray-600 pb-2 hover:text-orange-400 transition-colors cursor-pointer"
               >
-                <FaChevronRight className="text-[#294A63] hover:text-orange-400 transition-colors cursor-pointer" />
+                <FaChevronRight className="text-[#294A63]" />
                 {service}
               </li>
             ))}
@@ -143,9 +147,9 @@ const NoidaContact = () => {
         </div>
       </div>
 
-      {/* Our Expertise */}
+      {/* ===== Our Expertise ===== */}
       <div className="mt-20">
-      <div className="relative mb-8 text-center">
+        <div className="relative mb-8 text-center">
           <div className="absolute left-0 top-1/2 w-full border-t border-dashed border-[#294A63]"></div>
           <h2 className="relative inline-block bg-gray-50 px-4 text-4xl font-bold text-[#294A63]">
             Our Expertise
@@ -153,7 +157,6 @@ const NoidaContact = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          {/* Left: Image */}
           <div>
             <img
               src="/assets/digital-marketing.jpg"
@@ -161,9 +164,7 @@ const NoidaContact = () => {
               className="w-full h-auto object-cover rounded shadow"
             />
           </div>
-
-          {/* Right: Bullet Points */}
-          <div className="space-y-4 text-gray-700 text-lg">
+          <div className="space-y-4 text-gray-500 text-xl">
             <p>• <strong>Digital Marketing:</strong> SEO, PPC, SMO, and content writing.</p>
             <p>• <strong>Website Services:</strong> Designing and development tailored to your business needs.</p>
             <p>• <strong>Software Development:</strong> Innovative software solutions to drive business efficiency.</p>
@@ -172,22 +173,21 @@ const NoidaContact = () => {
         </div>
       </div>
 
-      {/* Our Big Step */}
+      {/* ===== Our Big Step ===== */}
       <div className="mt-20">
-      <div className="relative mb-8 text-center">
+        <div className="relative mb-8 text-center">
           <div className="absolute left-0 top-1/2 w-full border-t border-dashed border-[#294A63]"></div>
           <h2 className="relative inline-block bg-gray-50 px-4 text-4xl font-bold text-[#294A63]">
             Our Big Step
           </h2>
         </div>
 
-        <p className="text-left text-justify text-gray-600  mx-auto mb-12 text-xl">
-  We have developed a unique local ecosystem portal for cities, enabling
-  users to find local businesses, jobs, news, events, and much more. <br />
-  Currently live in 30 cities, we aim to expand to 500 cities in the
-  coming years.
-</p>
-
+        <p className="text-left text-justify text-gray-600 mx-auto mb-12 text-xl">
+          We have developed a unique local ecosystem portal for cities, enabling
+          users to find local businesses, jobs, news, events, and much more. <br />
+          Currently live in 30 cities, we aim to expand to 500 cities in the
+          coming years.
+        </p>
 
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -223,7 +223,7 @@ const NoidaContact = () => {
               <span className="px-2 bg-white relative z-10">
                 Awards and Achievements
               </span>
-              <div className="absolute top-1/2 left-0 w-full border-t border-dashed border-gray-3=600 z-0"></div>
+              <div className="absolute top-1/2 left-0 w-full border-t border-dashed border-gray-600 z-0"></div>
             </h3>
             <div className="text-gray-600 text-xl text-left space-y-2">
               <p><strong>• Winner of:</strong></p>
@@ -239,7 +239,7 @@ const NoidaContact = () => {
           {/* Government Projects */}
           <div
             className="bg-white rounded-lg p-6 text-center transition"
-            style={{ boxShadow: "0 0 30px rgba(0, 0, 0, 0.3)" }}  
+            style={{ boxShadow: "0 0 30px rgba(0, 0, 0, 0.3)" }}
           >
             <h3 className="text-4xl font-bold text-[#294A63] mb-3 relative">
               <span className="px-2 bg-white relative z-10">
@@ -261,7 +261,7 @@ const NoidaContact = () => {
         </div>
       </div>
 
-      {/* Google Map Section */}
+      {/* ===== Google Map ===== */}
       <div className="mt-20">
         <div className="relative mb-8 text-center">
           <div className="absolute left-0 top-1/2 w-full border-t border-dashed border-[#294A63]"></div>

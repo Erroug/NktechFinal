@@ -28,7 +28,7 @@ const GurugramContact = () => {
         </div>
 
         <div>
-          <ul className="text-xl space-y-5 text-sm">
+          <ul className="text-xl space-y-5 text-[#294A63] font-semibold text-sm">
             {[
               "SEO Services",
               "ORM Services",
