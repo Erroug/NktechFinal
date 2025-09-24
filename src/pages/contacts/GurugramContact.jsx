@@ -1,50 +1,59 @@
 import React from "react";
 import { FaChevronRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const GurugramContact = () => {
+  const services = [
+    { name: "SEO Services", link: "/services/digitalmarketing/seoservices" },
+    { name: "ORM Services", link: "/services/digitalmarketing/ormservices" },
+    { name: "SMM Services", link: "/services/digitalmarketing/smmservices" },
+    { name: "SMO Services", link: "/services/digitalmarketing/smoservices" },
+    { name: "PPC Services", link: "/services/digitalmarketing/ppcservices" },
+    { name: "VSO Services", link: "/services/digitalmarketing/vsoservices" },
+    { name: "Website Designing", link: "/services/webdevelopment/webdesigning" },
+    { name: "SMM Maintenance", link: "/services/webdevelopment/webmaintanence" },
+  ];
+
   return (
     <section className="max-w-7xl mx-auto px-4 py-12">
 
       {/* Services Section */}
       <div className="relative mb-8 text-center">
-          <div className="absolute left-0 top-1/2 w-full border-t border-dashed border-[#294A63]"></div>
-          <h2 className="relative inline-block bg-gray-50 px-4 text-4xl font-bold text-[#294A63]">
-            Our Services
-          </h2>
-        </div>
+        <div className="absolute left-0 top-1/2 w-full border-t border-dashed border-[#294A63]"></div>
+        <h2 className="relative inline-block bg-gray-50 px-4 text-4xl font-bold text-[#294A63]">
+          Our Services
+        </h2>
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10">
         <div>
-            <p className="px-13 text-xl text-center text-justify text-gray-600">
-          We are one of the best SEO company in Noida and ORM company in Noida, India. We are
-           also well-known SEO company in Ghaziabad. Website Designing Company in Ghaziabad,
+          <p className="px-13 text-xl text-center text-justify text-gray-600">
+            We are one of the best SEO company in Noida and ORM company in Noida, India. We are
+            also well-known SEO company in Ghaziabad. Website Designing Company in Ghaziabad,
             Noida and Delhi, India. We began our operations as Best Digital Marketing Agency
-             in the year 2012 and since then have grown by leaps and bounds. From the very 
-             beginning, we have stayed true to our core beliefs and have delivered an exceptional 
-             experience for our customers. We have more than 500 satisfied customers over the globe 
-             and delivered more than 1000 projects in last 12 years. Our expertise in Digital marketing 
-             services which includes SEO, PPC, SMO and content writing. We have made websites and done
-              SEO for Hotels, Hospitals, FMCG companies, Doctors, Clinics, Schools and Colleges.
+            in the year 2012 and since then have grown by leaps and bounds. From the very 
+            beginning, we have stayed true to our core beliefs and have delivered an exceptional 
+            experience for our customers. We have more than 500 satisfied customers over the globe 
+            and delivered more than 1000 projects in last 12 years. Our expertise in Digital marketing 
+            services which includes SEO, PPC, SMO and content writing. We have made websites and done
+            SEO for Hotels, Hospitals, FMCG companies, Doctors, Clinics, Schools and Colleges.
           </p>
         </div>
 
         <div>
           <ul className="text-xl space-y-5 text-[#294A63] font-semibold text-sm">
-            {[
-              "SEO Services",
-              "ORM Services",
-              "SMM Services",
-              "SMO Services",
-              "PPC Services",
-              "VSO Services",
-              "Website Designing",
-              "SMM Maintenance",
-            ].map((service, i) => (
+            {services.map((service, i) => (
               <li
                 key={i}
                 className="flex items-center gap-2 border-b border-gray-600 pb-2 hover:text-orange-400 transition-colors cursor-pointer"
               >
-                <FaChevronRight className="text-[#294A63] hover:text-orange-400 transition-colors cursor-pointer" />
-                {service}
+                <Link
+                  to={service.link}
+                  className="flex items-center gap-2 w-full hover:text-orange-400 transition-colors"
+                >
+                  <FaChevronRight className="text-[#294A63]" />
+                  {service.name}
+                </Link>
               </li>
             ))}
           </ul>
@@ -106,23 +115,15 @@ const GurugramContact = () => {
               info@bizwoke.in
             </a>
           </div>
-          {/* <div>
-            <h3 className="text-lg pt-30 font-semibold">Address</h3>
-            <a href="address" className="text-blue-600 hover:underline">
-              307B 3rd Floor I Thum Tower - A, sector 62 Noida 201301
-            </a>
-          </div> */}
         </div>
       </div>
 
       {/* Location Map */}
       <div className="pt-16">
-      <div className="relative mb-8 text-center">
+        <div className="relative mb-8 text-center">
           <div className="absolute left-0 top-1/2 w-full border-t border-dashed border-[#294A63]"></div>
           <h2 className="relative inline-block bg-gray-50 px-4 text-4xl font-bold text-[#294A63]">
-          {/* Our Location - DLF Tower, 8th Rd, Cyber City, Gurugram */}
-          Our Location
-
+            Our Location
           </h2>
         </div>
         <div className="w-full h-96">
@@ -139,9 +140,7 @@ const GurugramContact = () => {
       </div>
 
       {/* Footer Placeholder */}
-      <>
-        <footer />
-      </>
+      <footer />
     </section>
   );
 };

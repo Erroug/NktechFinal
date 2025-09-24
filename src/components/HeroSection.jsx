@@ -51,12 +51,18 @@ const HeroSection = () => {
 
         {/* CTA Buttons */}
         <div className="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4">
-          <button className="w-full sm:w-auto text-white bg-red-700 hover:bg-red-800 font-medium rounded-lg text-sm md:text-base px-6 py-3 shadow-md">
+
+          <a href="#">
+          <button className="w-full sm:w-auto text-white bg-red-700 hover:bg-blue-700 hover:cursor-pointer font-medium rounded-lg text-sm md:text-base px-6 py-3 shadow-md">
             WATCH VIDEOS
           </button>
-          <button className="w-full sm:w-auto text-white bg-red-700 hover:bg-red-800 font-medium rounded-lg text-sm md:text-base px-6 py-3 shadow-md">
+          </a>
+
+          <a href="#">
+          <button className="w-full sm:w-auto text-white bg-red-700 hover:bg-blue-700 hover:cursor-pointer font-medium rounded-lg text-sm md:text-base px-6 py-3 shadow-md">
             LEARN MORE
           </button>
+          </a>
         </div>
       </div>
 

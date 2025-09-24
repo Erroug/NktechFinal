@@ -1,9 +1,33 @@
 import React from "react";
 import { FaChevronRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const NoidaContact = () => {
+  const services = [
+    { name: "SEO Services", link: "/services/digitalmarketing/seoservices" },
+    { name: "ORM Services", link: "/services/digitalmarketing/ormservices" },
+    { name: "SMM Services", link: "/services/digitalmarketing/smmservices" },
+    { name: "SMO Services", link: "/services/digitalmarketing/smoservices" },
+    { name: "PPC Services", link: "/services/digitalmarketing/ppcservices" },
+    { name: "VSO Services", link: "/services/digitalmarketing/vsoservices" },
+    { name: "Website Designing", link: "/services/webdevelopment/webdesigning" },
+    { name: "SMM Maintenance", link: "/services/webdevelopment/webmaintanence" },
+  ];
+
+  const bigStepCards = [
+    {
+      title: "Vision",
+      text: "To expand globally and provide exceptional IT services worldwide, focusing on localized solutions tailored to customer needs and capabilities."
+    },
+    {
+      title: "Mission",
+      text: "To bring innovation and create value for customers through technologically excellent products and services."
+    },
+  ];
+
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+
       {/* ===== Our Journey ===== */}
       <div className="relative mb-8 text-center">
         <div className="absolute left-0 top-1/2 w-full border-t border-dashed border-[#294A63]"></div>
@@ -11,12 +35,10 @@ const NoidaContact = () => {
           Our Journey
         </h2>
       </div>
-
       <p className="pt-7 text-center text-xl text-gray-600 mb-12">
         Starting as a Digital Marketing Agency, we have expanded into Website
         Development, Software Development, and other IT solutions. Our
-        dedication to our core values has fueled our growth over the past
-        decade.
+        dedication to our core values has fueled our growth over the past decade.
       </p>
 
       {/* ===== Contact Section ===== */}
@@ -64,7 +86,6 @@ const NoidaContact = () => {
               +91 7836055511
             </a>
           </div>
-
           <div>
             <h3 className="text-lg font-semibold">Mail</h3>
             <a
@@ -74,7 +95,6 @@ const NoidaContact = () => {
               info@bizwoke.in
             </a>
           </div>
-
           <div>
             <h3 className="text-lg font-semibold">Address</h3>
             <a
@@ -96,7 +116,6 @@ const NoidaContact = () => {
           Our Services
         </h2>
       </div>
-
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10">
         <div>
           <p className="text-gray-600 text-xl text-justify mb-5">
@@ -106,41 +125,33 @@ const NoidaContact = () => {
             consistently delivered exceptional services, helping businesses grow
             by leveraging our expertise in SEO, PPC, SMO, and content writing.
           </p>
-
           <p className="text-gray-600 text-xl text-justify mb-5">
             With over 550 satisfied customers worldwide and 1000+ successful
             projects delivered, we are trusted by clients from diverse sectors,
             including Hotels, Hospitals, FMCG companies, Doctors, Clinics,
             Schools, Colleges, and many more.
           </p>
-
           <p className="text-gray-600 text-xl font-semibold">Our Journey</p>
           <p className="text-gray-600 text-xl text-justify mt-2">
             Started as a Digital Marketing Agency, we have expanded into Website
             Development, Software Development, and other IT solutions. Our
-            dedication to our core values has fueled our growth over the past
-            decade.
+            dedication to our core values has fueled our growth over the past decade.
           </p>
         </div>
-
         <div>
           <ul className="space-y-5 text-[#294A63] font-semibold text-xl">
-            {[
-              "SEO Services",
-              "ORM Services",
-              "SMM Services",
-              "SMO Services",
-              "PPC Services",
-              "VSO Services",
-              "Website Designing",
-              "SMM Maintenance",
-            ].map((service, i) => (
+            {services.map((service, i) => (
               <li
                 key={i}
                 className="flex items-center gap-2 border-b border-gray-600 pb-2 hover:text-orange-400 transition-colors cursor-pointer"
               >
-                <FaChevronRight className="text-[#294A63]" />
-                {service}
+                <Link
+                  to={service.link}
+                  className="flex items-center gap-2 w-full hover:text-orange-400 transition-colors"
+                >
+                  <FaChevronRight className="text-[#294A63]" />
+                  {service.name}
+                </Link>
               </li>
             ))}
           </ul>
@@ -155,7 +166,6 @@ const NoidaContact = () => {
             Our Expertise
           </h2>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
             <img
@@ -181,7 +191,6 @@ const NoidaContact = () => {
             Our Big Step
           </h2>
         </div>
-
         <p className="text-left text-justify text-gray-600 mx-auto mb-12 text-xl">
           We have developed a unique local ecosystem portal for cities, enabling
           users to find local businesses, jobs, news, events, and much more. <br />
@@ -191,16 +200,7 @@ const NoidaContact = () => {
 
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {[
-            {
-              title: "Vision",
-              text: "To expand globally and provide exceptional IT services worldwide, focusing on localized solutions tailored to customer needs and capabilities."
-            },
-            {
-              title: "Mission",
-              text: "To bring innovation and create value for customers through technologically excellent products and services."
-            },
-          ].map((item, idx) => (
+          {bigStepCards.map((item, idx) => (
             <div
               key={idx}
               className="bg-white rounded-lg p-6 text-center transition"
